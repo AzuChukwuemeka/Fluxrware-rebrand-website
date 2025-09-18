@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
-import Navbar from "./navbar";
-import FluxwareButton from "./FluxwareButtons";
+import Navbar from "../global/navbar/navbar";
+import FluxwareButton from "../global/FluxUI/FluxwareButtons";
 
 
 export default function HeroSection() {
@@ -20,11 +20,11 @@ export default function HeroSection() {
                 <Container maxWidth = "lg">
                 <Navbar />
                 <Box
-                    marginTop={8} 
-                    paddingBlock={.5}
-                    paddingInline={2}
-                    borderRadius={50}
-                    border={1.3}
+                    marginTop={theme.spacing(9)} 
+                    paddingBlock={theme.spacing(.5)}
+                    paddingInline={theme.spacing(2)}
+                    borderRadius={theme.shape.borderRadius}
+                    border={1}
                     borderColor={"divider"}
                     display={"flex"}
                     justifySelf={"center"}
@@ -38,32 +38,32 @@ export default function HeroSection() {
                     <Avatar alt="User Served" src="./served2.jpg" sx = {{width: 24, height: 24}}/>
                     <Avatar alt="User Served" src="./served3.jpg" sx = {{width: 24, height: 24}}/>
                     </Stack>
-                    <Typography variant="body2" textAlign="center" letterSpacing={.6} fontWeight={500}>
+                    <Typography variant="body2" textAlign="center" letterSpacing={theme.spacing(.1)} fontWeight={500}>
                         Served over 200+ Happy Clients
                     </Typography>
                 </Box>
 
-                <Box marginTop={7}>
-                    <Typography variant="h3" component="h2" letterSpacing={3} textAlign="center">
-                    Let us <span style = {{color: theme.palette.primary.main}}>Design</span> and <span style = {{color: "grey"}}>Build</span> your <br /> next Website.
+                <Box marginTop={theme.spacing(7)}>
+                    <Typography variant="h3" component="h2" letterSpacing={3} textAlign="center" fontWeight={"bold"}>
+                        Let us <span style = {{color: theme.palette.primary.main}}>Design</span> and <span style = {{color: "grey"}}>Build</span> your <br /> next Website.
                     </Typography>
-                    <Typography variant="body1" textAlign="center" padding={4} letterSpacing={.3}>
-                    Elevating brands with custom, responsive web design and robust development
+                    <Typography variant="body1" textAlign="center" padding={theme.spacing(4)} letterSpacing={theme.spacing(.1)} fontWeight={"bold"}>
+                        Elevating brands with custom, responsive web design and robust development
                     </Typography>
                 </Box>
-
-                <Box 
-                    display={"flex"}
-                    flexWrap={"wrap"}
-                    padding={1}
-                    justifyContent={"space-around"}
-                    width={"min(100%,400px)"}
-                    marginInline={"auto"}
+                <Container 
+                    maxWidth = "xs"
+                    sx = {{
+                        display:"flex",
+                        flexWrap: "wrap",
+                        padding: theme.spacing(1),
+                        justifyContent: "center",
+                    }}
                 >
                     {/* <FluxwareButton variant="outlined">Space for icons</FluxwareButton> */}
                     <FluxwareButton variant="outlined">Pricing</FluxwareButton>
                     <FluxwareButton variant="contained">Get Started</FluxwareButton>
-                </Box>
+                </Container>
                 <img src = "./hero-bottom.png" alt = "Hero Image"/>
                 </Container>
             </Box>

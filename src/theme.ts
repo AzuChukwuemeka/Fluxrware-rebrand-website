@@ -22,6 +22,10 @@ let theme = createTheme({
   typography: {
     fontFamily: 'var(--font-roboto)',
   },
+  fluxware: {
+    goodTickColor: "green",
+    badTickColor: "red"
+  }
 });
 theme = responsiveFontSizes(theme);
 export default theme;

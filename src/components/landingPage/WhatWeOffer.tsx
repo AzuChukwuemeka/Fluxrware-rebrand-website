@@ -1,22 +1,22 @@
 import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
-import FluxPictureText from "./FluxPictureText";
+import FluxPictureText from "../global/FluxUI/FluxPictureText";
 
 export default function WhatWeOffer() {
-    const th : Theme = useTheme();
+    const theme : Theme = useTheme();
     return (
     <>
       <Box style = {{background: "radial-gradient(circle at bottom left, #fefefe 94%, lightblue) 200% 200%"}}>
         <Container maxWidth = "lg">
-          <Typography variant = "h3" textAlign={"center"} paddingTop={10}>
-            What We <span style = {{color: th.palette.primary.main}}>Offer</span>
+          <Typography variant = "h3" textAlign={"center"} paddingTop={theme.spacing(10)} fontWeight = "bold">
+            What We <span style = {{color: theme.palette.primary.main}}>Offer</span>
           </Typography>
-          <Typography variant = "body1" textAlign={"center"} paddingTop={4} paddingBottom={15} fontWeight={"bold"}>
+          <Typography variant = "body1" textAlign={"center"} paddingTop={theme.spacing(4)} paddingBottom={15} fontWeight={"bold"}>
             Solutions tailored to grow your business from the ground up.
           </Typography>
-          <Grid container spacing = {4}>
+          <Grid container spacing = {theme.spacing(4)}>
             <Grid item xs={12} sm={12} md={5} alignSelf={"center"}>
               <FluxPictureText>
-                <Avatar src = "./paint.png" sx = {{marginRight: 2}}/>
+                <Avatar src = "./paint.png" sx = {{marginRight: theme.spacing(2)}}/>
                 <Typography variant="h4" textAlign={"justify"} fontWeight={"bold"}>
                   Custom Website Design
                 </Typography>
@@ -26,7 +26,7 @@ export default function WhatWeOffer() {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} md={7}>
-              <Box paddingBottom={20}>
+              <Box paddingBottom={theme.spacing(20)}>
                 <img 
                   src = "./welcome-back.png" 
                   style = {{
@@ -39,9 +39,9 @@ export default function WhatWeOffer() {
               </Box>
             </Grid>
           </Grid>
-          <Grid container spacing = {4}>
+          <Grid container spacing = {theme.spacing(4)}>
             <Grid item xs={12} sm={12} md={7} alignSelf={"center"}>
-              <Box paddingBottom={20}>
+              <Box paddingBottom={theme.spacing(20)}>
                 <img 
                   src = "./responsive.jpg" 
                   style = {{
@@ -55,7 +55,7 @@ export default function WhatWeOffer() {
             </Grid>
             <Grid item xs={12} sm={12} md={5}>
               <FluxPictureText>
-                <Avatar src = "./screw-driver.png" sx = {{marginRight: 2}}/>
+                <Avatar src = "./screw-driver.png" sx = {{marginRight: theme.spacing(2)}}/>
                 <Typography variant="h5" textAlign={"justify"}  fontWeight={"bold"}>
                   Responsive web Development
                 </Typography>
@@ -65,10 +65,10 @@ export default function WhatWeOffer() {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container spacing = {4}>
+          <Grid container spacing = {theme.spacing(4)}>
             <Grid item xs={12} sm={12} md={5} alignSelf={"center"}>
               <FluxPictureText>
-                <Avatar src = "./basket.png" sx = {{marginRight: 2}}/>
+                <Avatar src = "./basket.png" sx = {{marginRight: theme.spacing(2)}}/>
                 <Typography variant="h4" textAlign={"justify"} fontWeight={"bold"}>
                   E-Commerce Development
                 </Typography>
@@ -78,8 +78,8 @@ export default function WhatWeOffer() {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} md={7}>
-              <Box paddingBottom={20}>
-                <img 
+              <Box paddingBottom={theme.spacing(20)}>
+                <img
                   src = "./pre-order.jpg" 
                   style = {{
                     width: "80%",
@@ -91,7 +91,7 @@ export default function WhatWeOffer() {
               </Box>
             </Grid>
           </Grid>
-          <Grid container spacing = {4}>
+          <Grid container spacing = {theme.spacing(4)}>
             <Grid item xs={12} sm={12} md={7} alignSelf={"center"}>
               <Box paddingBottom={20}>
                 <img 
@@ -107,7 +107,7 @@ export default function WhatWeOffer() {
             </Grid>
             <Grid item xs={12} sm={12} md={5}>
               <FluxPictureText>
-                <Avatar src = "./rocket.png" sx = {{marginRight: 2}}/>
+                <Avatar src = "./rocket.png" sx = {{marginRight: theme.spacing(2)}}/>
                 <Typography variant="h5" textAlign={"justify"} fontWeight={"bold"}>
                   SEO & Performance Optimization
                 </Typography>
@@ -117,10 +117,10 @@ export default function WhatWeOffer() {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container spacing = {4}>
+          <Grid container spacing = {theme.spacing(4)}>
             <Grid item xs={12} sm={12} md={5} alignSelf={"center"}>
               <FluxPictureText>
-                <Avatar src = "./spanner.png" sx = {{marginRight: 2}}/>
+                <Avatar src = "./spanner.png" sx = {{marginRight: theme.spacing(2)}}/>
                 <Typography variant="h5" textAlign={"justify"} fontWeight={"bold"}>
                   Ongoing Maintenance & Support
                 </Typography>

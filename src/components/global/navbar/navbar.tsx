@@ -5,7 +5,13 @@ import Link from "next/link";
 export default function Navbar(){
     return (
       <Box
-        display={"flex"}
+        sx = {{
+          display: {
+            xs: 'none',
+            md: 'none',
+            lg: 'flex'
+          }
+        }}
         justifySelf={"center"}
         marginTop={1}
         padding={.5}

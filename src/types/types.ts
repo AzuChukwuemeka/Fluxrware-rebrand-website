@@ -1,4 +1,4 @@
-export type fluxwareButton = {
+export interface fluxwareButton {
     children : string
     variant: "contained" | "outlined"
 }

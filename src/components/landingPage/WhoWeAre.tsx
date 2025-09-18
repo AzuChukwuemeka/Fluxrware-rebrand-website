@@ -5,15 +5,15 @@ export default function WhoWeAre() {
     const theme : Theme = useTheme();
     return (
         <React.Fragment>
-          <Box paddingTop={10}  style = {{background: "radial-gradient(circle at bottom left, #fefefe 90%, lightblue) 200% 200%"}}>
+          <Box paddingTop={theme.spacing(10)}  style = {{background: "radial-gradient(circle at bottom left, #fefefe 90%, lightblue) 200% 200%"}}>
             <Container>
-            <Typography variant = "h3" textAlign={"center"}>
+            <Typography variant = "h3" textAlign={"center"} fontWeight={"bold"}>
               Who We <span style = {{color: theme.palette.primary.main}}>Are</span>
             </Typography>
-            <Typography textAlign={"center"} paddingTop={2} fontWeight={"bold"}>
+            <Typography textAlign={"center"} paddingTop={theme.spacing(2)} fontWeight={"bold"}>
               More than just code, it's about the people behind the projects
             </Typography>
-            <Grid container marginTop={6} spacing = {3}>
+            <Grid container marginTop={theme.spacing(6)} spacing = {theme.spacing(7)}>
               <Grid item xs = {12/1} md = {12/1} lg = {7}>
                 <Typography variant="h4" fontWeight={"bold"}>
                   What's <span style = {{color: "grey"}}>Fluxrware</span> all about?                  
@@ -23,7 +23,7 @@ export default function WhoWeAre() {
                 </Typography>
               </Grid>
               <Grid item xs = {12/1} md = {12/1} lg = {5}>
-                <Grid container spacing = {3}>
+                <Grid container spacing = {theme.spacing(3)}>
                   <Grid item lg = {12/2}>
                     <Box>
                       <img src = "./about-us-1.png" style = {{borderRadius: "20px"}}/>
@@ -49,10 +49,10 @@ export default function WhoWeAre() {
                 </Grid>
               </Grid>
             </Grid>
-            <Typography variant = "h3" textAlign={"center"} marginBlock={8}>
+            <Typography variant = "h3" textAlign={"center"} marginBlock={theme.spacing(8)} fontWeight = {"bold"}>
               Rest of the <span style = {{color: theme.palette.primary.main}}>Team</span>
             </Typography>
-              <Grid container spacing = {3}>
+              <Grid container spacing = {theme.spacing(3)}>
                 <Grid item lg = {12/8}>
                   <Box>
                     <img src = "./about-us.jpg" style = {{borderRadius: "20px"}}/>
