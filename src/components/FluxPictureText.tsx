@@ -1,0 +1,12 @@
+import { Box } from "@mui/material";
+import React from "react";
+type picture  = {
+    children: any
+}
+export default function FluxPictureText(props: picture)  {
+    return (
+        <Box display = {"flex"} paddingBlock={2} alignItems={"center"}>
+            {props.children}
+        </Box>
+    )
+}
