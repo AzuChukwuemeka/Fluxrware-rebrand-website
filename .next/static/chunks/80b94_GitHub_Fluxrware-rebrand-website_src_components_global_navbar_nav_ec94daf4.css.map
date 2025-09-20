@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/CODE/Documents/GitHub/Fluxrware-rebrand-website/src/components/global/navbar/nav.css"],"sourcesContent":["ul{\r\n    display: flex;\r\n    padding: 0 20px;\r\n}\r\nul:last-child{\r\n    border-radius: 50px;\r\n    border: 1.4px solid #111;\r\n    padding-inline: 25px\r\n}\r\n.active{\r\n    color: blue\r\n}\r\nul li a{\r\n    display: inline-block;\r\n    padding: 10px 20px;\r\n}"],"names":[],"mappings":"AAAA;;;;;AAIA;;;;;;;AAKA;;;;AAGA","debugId":null}}]
+}

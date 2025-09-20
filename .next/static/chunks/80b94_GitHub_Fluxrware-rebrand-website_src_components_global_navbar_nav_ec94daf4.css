@@ -1,0 +1,23 @@
+/* [project]/Documents/GitHub/Fluxrware-rebrand-website/src/components/global/navbar/nav.css [app-client] (css) */
+ul {
+  padding: 0 20px;
+  display: flex;
+}
+
+ul:last-child {
+  border: 1.4px solid #111;
+  border-radius: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.active {
+  color: #00f;
+}
+
+ul li a {
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=80b94_GitHub_Fluxrware-rebrand-website_src_components_global_navbar_nav_ec94daf4.css.map*/
