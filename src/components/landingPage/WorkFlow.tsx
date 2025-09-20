@@ -17,13 +17,14 @@ export default function WorkFlow() {
                 background: "linear-gradient(180deg, lightblue, #fefefe 20%)",
                 }}
             >
+                <Typography variant = "h3" paddingTop={theme.spacing(6)} textAlign={"center"} fontWeight={"bold"}>
+                    <span style = {{color: theme.palette.primary.main}}>Your</span> Website, Our <span style = {{color: "grey"}}>Workflow</span>.
+                </Typography>
+                <Typography variant = "body2" paddingTop = {theme.spacing(5)} marginBottom = {theme.spacing(8)} textAlign={"center"} fontWeight={"bold"}>
+                    A seamless process designed to bring your unique vision to life, on time and on budget.
+                </Typography>
+
                 <Container maxWidth="lg">
-                    <Typography variant = "h3" paddingTop={theme.spacing(6)} textAlign={"center"} fontWeight={"bold"}>
-                        <span style = {{color: theme.palette.primary.main}}>Your</span> Website, Our <span style = {{color: "grey"}}>Workflow</span>.
-                    </Typography>
-                    <Typography variant = "body1" marginTop = {theme.spacing(3)} marginBottom = {theme.spacing(8)} textAlign={"center"} fontWeight={"bold"}>
-                        A seamless process designed to bring your unique vision to life, on time and on budget.
-                    </Typography>
                     <Grid container spacing={theme.spacing(4)}>
                     <Grid item xs={12} sm={12} md={5}>
                     <Card sx = {{padding: theme.spacing(2)}}>
@@ -35,13 +36,13 @@ export default function WorkFlow() {
                             <ArrowForwardIcon fontSize="large"/>
                         </CardContent>
                         <CardContent>
-                            <Typography variant="body1" paddingBottom = {theme.spacing(2)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBottom = {theme.spacing(2)}>
                                 <b>Defining Your Vision:</b> We define your vision and goals to lay the foundation for success.
                             </Typography>
-                            <Typography variant="body1" paddingBlock = {theme.spacing(2)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBlock = {theme.spacing(2)}>
                                 <b>Blueprint:</b> We map out a perfect solution and detailed plan for your project.
                             </Typography>
-                            <Typography variant="body1" paddingBlock = {theme.spacing(2)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBlock = {theme.spacing(2)}>
                                 <b>Align and Plan:</b> We align our expertise with your business goals to craft a clear roadmap.
                             </Typography>
                         </CardContent>
@@ -83,10 +84,10 @@ export default function WorkFlow() {
                                     </Typography>
                                     <ArrowDownwardIcon fontSize="large"/>
                                 </Box>
-                                <Typography variant="body1" paddingBlock = {theme.spacing(2)} textAlign={"justify"}>
+                                <Typography variant="body1" paddingBlock = {theme.spacing(2)}>
                                     <b>Crafting The Experience:</b> We translate strategy into a user-centric design that captivates your audience.
                                 </Typography>
-                                <Typography variant="body1" paddingBlock = {theme.spacing(2)} textAlign={"justify"}>
+                                <Typography variant="body1" paddingBlock = {theme.spacing(2)}>
                                     <b>UI/UX & Branding:</b> We translate strategy into a user-centric design that captivates your audience.
                                 </Typography>
                             </Grid>
@@ -105,13 +106,13 @@ export default function WorkFlow() {
                                 </Typography>
                                 <ArrowDownwardIcon fontSize="large"/>
                             </Box>
-                            <Typography variant="body1" paddingBlock = {theme.spacing(1.5)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBlock = {theme.spacing(1.5)}>
                                 <b>Precision Development:</b> We build fast, responsive and secure websites with modern code.
                             </Typography>
-                            <Typography variant="body1" paddingBlock = {theme.spacing(1.5)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBlock = {theme.spacing(1.5)}>
                                 <b>Engineering for Performance:</b> We engineer every detail for speed, responsiveness and reliability
                             </Typography>
-                            <Typography variant="body1" paddingBlock = {theme.spacing(1.5)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBlock = {theme.spacing(1.5)}>
                                 <b>Code & Display:</b> We transform designs into flawless websites with a seamless launch.
                             </Typography>
                         </CardContent>
@@ -133,13 +134,13 @@ export default function WorkFlow() {
                             </Typography>
                             <ArrowDownwardIcon fontSize="large"/>
                             </Box>
-                            <Typography variant="body1" paddingBlock = {theme.spacing(2)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBlock = {theme.spacing(2)}>
                                 <b>Ongoing partnership:</b> We provide continuous support and optimization to keep your website at it's best.
                             </Typography>
-                            <Typography variant="body1" paddingBlock = {theme.spacing(2)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBlock = {theme.spacing(2)}>
                                 <b>Evolving for the Future:</b> We offer strategic guidance to help you adapt, scale and stay ahead of the competition.
                             </Typography>
-                            <Typography variant="body1" paddingBlock = {theme.spacing(2)} textAlign={"justify"}>
+                            <Typography variant="body1" paddingBlock = {theme.spacing(2)}>
                                 <b>Maintenance & Optimization:</b> We provide dedicated support to keep your site running smoothly and help it grow.
                             </Typography>
                         </CardContent>

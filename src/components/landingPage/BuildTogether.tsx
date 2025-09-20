@@ -23,7 +23,7 @@ export default function BuildTogether() {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs = {12} md = {12} lg = {5}>
-                                    <img src = "./final-cta.png"/>
+                                    <img src = "./build-something-great.png"/>
                                 </Grid>
                             </Grid>
                         </CardContent>
