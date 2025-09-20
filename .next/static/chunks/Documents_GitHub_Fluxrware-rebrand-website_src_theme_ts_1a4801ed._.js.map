@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/CODE/Documents/GitHub/Fluxrware-rebrand-website/src/theme.ts"],"sourcesContent":["'use client';\r\nimport { BorderColor } from '@mui/icons-material';\r\nimport { createTheme, responsiveFontSizes } from '@mui/material/styles';\r\n\r\nlet theme = createTheme({\r\n  components: {\r\n    MuiTypography: {\r\n      styleOverrides: {\r\n        root: {\r\n          color: '#000', // force black for all Typography\r\n        },\r\n      },\r\n    },\r\n    MuiButton: {\r\n      styleOverrides: {\r\n        root: {\r\n          textTransform: 'none', // force black for all Typography\r\n        },\r\n      },\r\n    }\r\n  },\r\n  typography: {\r\n    fontFamily: 'var(--font-roboto)',\r\n  },\r\n  fluxware: {\r\n    goodTickColor: \"green\",\r\n    badTickColor: \"red\"\r\n  }\r\n});\r\ntheme = responsiveFontSizes(theme);\r\nexport default theme;\r\n"],"names":[],"mappings":";;;;AAEA;AAAA;AAFA;;AAIA,IAAI,QAAQ,IAAA,sNAAW,EAAC;IACtB,YAAY;QACV,eAAe;YACb,gBAAgB;gBACd,MAAM;oBACJ,OAAO;gBACT;YACF;QACF;QACA,WAAW;YACT,gBAAgB;gBACd,MAAM;oBACJ,eAAe;gBACjB;YACF;QACF;IACF;IACA,YAAY;QACV,YAAY;IACd;IACA,UAAU;QACR,eAAe;QACf,cAAc;IAChB;AACF;AACA,QAAQ,IAAA,8OAAmB,EAAC;uCACb","debugId":null}}]
-}
