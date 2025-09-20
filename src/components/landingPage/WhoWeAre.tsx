@@ -1,5 +1,6 @@
 import React from "react";
-import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
+import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
+import { Theme } from "@mui/material/styles";
 
 export default function WhoWeAre() {
     const theme : Theme = useTheme();

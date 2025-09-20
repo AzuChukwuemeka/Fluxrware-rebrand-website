@@ -1,5 +1,5 @@
 import { fluxwareButton } from "@/types/types";
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material/styles";
 import { Button, Theme } from "@mui/material";
 export default function FluxwareButton(props: fluxwareButton){
     const theme : Theme = useTheme();

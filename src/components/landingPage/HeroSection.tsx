@@ -1,5 +1,6 @@
 import React from "react";
-import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
+import { Avatar, Box, Container, Stack, Typography, useTheme } from "@mui/material";
+import { Theme } from "@mui/material/styles";
 import Navbar from "../global/navbar/navbar";
 import FluxwareButton from "../global/FluxUI/FluxwareButtons";
 

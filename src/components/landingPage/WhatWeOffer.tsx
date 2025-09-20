@@ -1,4 +1,5 @@
-import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
+import { Avatar, Box, Container, Grid, Typography, useTheme } from "@mui/material";
+import { Theme } from "@mui/material/styles";
 import FluxPictureText from "../global/FluxUI/FluxPictureText";
 
 export default function WhatWeOffer() {
