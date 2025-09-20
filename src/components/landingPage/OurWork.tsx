@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
-import FluxPictureText from "../global/FluxUI/FluxPictureText";
+import FluxPictureText from "../global/fluxUI/FluxPictureText";
+import { successStoriesRowOne, successStoriesRowThree, successStoriesRowTwo } from "@/data/fluxData";
 
 export default function OurWork() {
     const theme : Theme = useTheme();
@@ -15,161 +16,68 @@ export default function OurWork() {
                 Their words, their success, our shared story
               </Typography>
               <Box>
-                <Grid container spacing = {2} justifyContent={"center"} marginBottom={2}>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
+                <Grid container spacing = {2} justifyContent={"center"} paddingBottom={2}  sx = {{display: {xs: 'none', md: 'none', lg: "flex"}}}>
+                  {successStoriesRowOne.map((value,index) => {
+                    return (
+                      <Grid item xs = {12/1} md = {12/1} lg = {12/4} key = {index}>
+                        <Card variant = "outlined">
+                          <CardContent>
+                            <FluxPictureText>
+                              <Avatar src = {value.avatar} sx = {{marginRight: theme.spacing(2)}}/>
+                              <Typography fontWeight = {"bold"}>
+                                {value.name}
+                              </Typography>
+                            </FluxPictureText>
+                            <Typography fontWeight = {"bold"} variant = "body2">
+                              {value.review}
+                            </Typography>
+                          </CardContent>
+                        </Card>
+                      </Grid>
+                    )
+                  })}
                 </Grid>
-                <Grid container spacing = {2} justifyContent={"center"} marginBottom={2}>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
+                <Grid container spacing = {2} justifyContent={"center"} paddingBottom={2}>
+                  {successStoriesRowTwo.map((value,index) => {
+                    return (
+                      <Grid item xs = {12/1} md = {12/1} lg = {12/4} key = {index}>
+                        <Card variant = "outlined">
+                          <CardContent>
+                            <FluxPictureText>
+                              <Avatar src = {value.avatar} sx = {{marginRight: theme.spacing(2)}}/>
+                              <Typography fontWeight = {"bold"}>
+                                {value.name}
+                              </Typography>
+                            </FluxPictureText>
+                            <Typography fontWeight = {"bold"} variant = "body2">
+                              {value.review}
+                            </Typography>
+                          </CardContent>
+                        </Card>
+                      </Grid>
+                    )
+                  })}
                 </Grid>
-                <Grid container spacing = {2} justifyContent={"center"}>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                  <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
-                    <Card variant = "outlined">
-                      <CardContent>
-                        <FluxPictureText>
-                          <Avatar src = "./served1.jpg" sx = {{marginRight: theme.spacing(2)}}/>
-                          <Typography fontWeight = {"bold"}>
-                            Rando
-                          </Typography>
-                        </FluxPictureText>
-                        <Typography fontWeight = {"bold"} variant = "body2">
-                          "Reliable, creative, and always one step ahead. Highly recommended."
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
+                <Grid container spacing = {2} justifyContent={"center"} paddingBottom={2}  sx = {{display: {xs: 'none', md: 'none', lg: "flex"}}}>
+                  {successStoriesRowThree.map((value,index) => {
+                    return (
+                      <Grid item xs = {12/1} md = {12/1} lg = {12/4} key = {index}>
+                        <Card variant = "outlined">
+                          <CardContent>
+                            <FluxPictureText>
+                              <Avatar src = {value.avatar} sx = {{marginRight: theme.spacing(2)}}/>
+                              <Typography fontWeight = {"bold"}>
+                                {value.name}
+                              </Typography>
+                            </FluxPictureText>
+                            <Typography fontWeight = {"bold"} variant = "body2">
+                              {value.review}
+                            </Typography>
+                          </CardContent>
+                        </Card>
+                      </Grid>
+                    )
+                  })}
                 </Grid>
               </Box>
             </Container>

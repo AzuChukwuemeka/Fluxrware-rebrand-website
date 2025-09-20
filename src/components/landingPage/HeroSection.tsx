@@ -1,7 +1,9 @@
 import React from "react";
-import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
+import { Avatar, Box, Container, Stack, Theme, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Navbar from "../global/navbar/navbar";
-import FluxwareButton from "../global/FluxUI/FluxwareButtons";
+import FluxwareButton from "../global/fluxUI/FluxwareButtons";
+import Image from "next/image";
+import Link from "next/link";
 
 
 export default function HeroSection() {
@@ -13,12 +15,11 @@ export default function HeroSection() {
                 display: "flex",
                 flexWrap: "wrap",
                 flexDirection: "column",
-                minHeight: "100vh",
                 background: "radial-gradient(circle, #fefefe 40%, lightblue)",
                 }}
             >
-                <Container maxWidth = "lg">
-                <Navbar />
+            <Navbar />
+            <Container maxWidth = "lg">
                 <Box
                     marginTop={theme.spacing(9)} 
                     paddingBlock={theme.spacing(.5)}
@@ -34,9 +35,9 @@ export default function HeroSection() {
                     }}
                 >
                     <Stack direction = "row" marginRight={1}>
-                    <Avatar alt="User Served" src="./served1.jpg" sx = {{width: 24, height: 24}}/>
-                    <Avatar alt="User Served" src="./served2.jpg" sx = {{width: 24, height: 24}}/>
-                    <Avatar alt="User Served" src="./served3.jpg" sx = {{width: 24, height: 24}}/>
+                        <Avatar alt="User Served" src="./served1.jpg" sx = {{width: 24, height: 24}}/>
+                        <Avatar alt="User Served" src="./served2.jpg" sx = {{width: 24, height: 24}}/>
+                        <Avatar alt="User Served" src="./served3.jpg" sx = {{width: 24, height: 24}}/>
                     </Stack>
                     <Typography variant="body2" textAlign="center" letterSpacing={theme.spacing(.1)} fontWeight={500}>
                         Served over 200+ Happy Clients
@@ -47,7 +48,7 @@ export default function HeroSection() {
                     <Typography variant="h3" component="h2" letterSpacing={3} textAlign="center" fontWeight={"bold"}>
                         Let us <span style = {{color: theme.palette.primary.main}}>Design</span> and <span style = {{color: "grey"}}>Build</span> your <br /> next Website.
                     </Typography>
-                    <Typography variant="body1" textAlign="center" padding={theme.spacing(4)} letterSpacing={theme.spacing(.1)} fontWeight={"bold"}>
+                    <Typography variant="body1" textAlign="center" padding={theme.spacing(4)} letterSpacing={theme.spacing(.1)}>
                         Elevating brands with custom, responsive web design and robust development
                     </Typography>
                 </Box>
@@ -56,15 +57,31 @@ export default function HeroSection() {
                     sx = {{
                         display:"flex",
                         flexWrap: "wrap",
-                        padding: theme.spacing(1),
+                        padding: theme.spacing(.2),
                         justifyContent: "center",
                     }}
                 >
-                    {/* <FluxwareButton variant="outlined">Space for icons</FluxwareButton> */}
-                    <FluxwareButton variant="outlined">Pricing</FluxwareButton>
-                    <FluxwareButton variant="contained">Get Started</FluxwareButton>
+                        {/* <FluxwareButton variant="outlined">Space for icons</FluxwareButton> */}
+                        <Link href={"/prices"}>
+                            <FluxwareButton variant="outlined">Pricing</FluxwareButton>
+                        </Link>
+                        <Link href={""}>
+                            <FluxwareButton variant="contained">Get Started</FluxwareButton>
+                        </Link>
+
                 </Container>
-                <img src = "./hero-bottom.png" alt = "Hero Image"/>
+                <Box>
+                    <Image 
+                        src = "/hero-bottom.png"
+                        alt = "landing-page-image"
+                        width = {2000}
+                        height = {1000}
+                        style = {{
+                            width: "100%",
+                            height: "auto"
+                        }}
+                    />
+                </Box>
                 </Container>
             </Box>
         </React.Fragment>

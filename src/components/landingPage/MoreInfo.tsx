@@ -21,7 +21,7 @@ export default function MoreInfo() {
 
     return (
         <React.Fragment>
-          <Box paddingTop={10}  style = {{background: "radial-gradient(circle at bottom left, #fefefe 90%, lightblue) 200% 200%"}}>
+          <Box paddingTop={10} sx = {{background: "#fefefe"}}>
             <Container>
               <Typography textAlign={"center"} variant = "h3" fontWeight={"bold"}>
                 Need a Little More <span style = {{color: theme.palette.primary.main}}>Info?</span>
