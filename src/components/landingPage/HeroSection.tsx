@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import { Avatar, Box, Container, Stack, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";

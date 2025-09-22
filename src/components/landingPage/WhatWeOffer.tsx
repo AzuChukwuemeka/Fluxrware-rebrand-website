@@ -1,3 +1,4 @@
+'use client';
 import { Avatar, Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 import FluxPictureText from "../global/fluxUI/FluxPictureText";
