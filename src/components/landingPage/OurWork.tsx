@@ -7,6 +7,7 @@ import { customerReviewsRowOne, customerReviewsRowThree, customerReviewsRowTwo }
 import { generateRandomColor } from "@/utils/helpers";
 
 export default function OurWork() {
+  // MISMATCH ERROR IS DUE TO GENERATING RANDOM COLORS ON THE SERVER AND THEN ON THE CLIENT (UNAVOIDABLE) INTENTIONAL HYRDATION MISMATCH
   const theme: Theme = useTheme();
   return (
     <React.Fragment>
