@@ -10,7 +10,7 @@ export const coFounders : Array<fluxwareStaff> = [
         img: "/about-us-2.png",
         name: "Rhema Emmanuel",
         position: "Co-Founder, Front-end Developer"
-    }
+    },
 ];
 
 export const restOfTheTeam : Array<fluxwareStaff> = [

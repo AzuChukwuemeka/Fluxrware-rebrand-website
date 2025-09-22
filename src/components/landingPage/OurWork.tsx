@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Box, Card, CardContent, Container, Grid, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
-import FluxPictureText from "../global/FluxUI/FluxPictureText";
+import FluxPictureText from "../global/fluxUI/FluxPictureText";
 import { customerReviewsRowOne, customerReviewsRowThree, customerReviewsRowTwo } from "@/data/customerReviews";
 
 export default function OurWork() {
@@ -20,7 +20,7 @@ export default function OurWork() {
                 <Grid container spacing = {2} justifyContent={"center"} paddingBottom={2}>
                   {customerReviewsRowOne.map((customerReview,index) => {
                     return (
-                      <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
+                      <Grid key = {index} item xs = {12/1} md = {12/1} lg = {12/4}>
                         <Card variant = "outlined">
                           <CardContent>
                             <FluxPictureText>
@@ -42,7 +42,7 @@ export default function OurWork() {
                 <Grid container spacing = {2} justifyContent={"center"} paddingBottom={2}>
                   {customerReviewsRowTwo.map((customerReview,index) => {
                     return (
-                      <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
+                      <Grid key = {index} item xs = {12/1} md = {12/1} lg = {12/4}>
                         <Card variant = "outlined">
                           <CardContent>
                             <FluxPictureText>
@@ -64,7 +64,7 @@ export default function OurWork() {
                 <Grid container spacing = {2} justifyContent={"center"} paddingBottom={2}>
                   {customerReviewsRowThree.map((customerReview,index) => {
                     return (
-                      <Grid item xs = {12/1} md = {12/1} lg = {12/4}>
+                      <Grid key = {index} item xs = {12/1} md = {12/1} lg = {12/4}>
                         <Card variant = "outlined">
                           <CardContent>
                             <FluxPictureText>

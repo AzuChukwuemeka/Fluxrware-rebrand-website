@@ -1,5 +1,8 @@
+import React from "react"
+
 export interface fluxwareButton {
-    children : string
+    children : string,
+    link : string,
     variant: "contained" | "outlined"
 }
 export interface fluxwareStaff {
@@ -21,4 +24,15 @@ export interface projectTierElement {
     price: number,
     description: string,
     services: Array<projectTierService>
+}
+export interface productOffered {
+    title: string,
+    description: string,
+    img: string,
+    smallImg?: string
+}
+export interface navItems {
+    name: string,
+    link: string,
+    icon?: React.ReactElement | string
 }

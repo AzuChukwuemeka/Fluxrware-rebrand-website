@@ -1,6 +1,7 @@
 import { useTheme } from "@mui/material/styles";
 import { Box, Card, CardContent, Container, Grid, Theme, Typography } from "@mui/material";
 import React from "react";
+import Image from "next/image";
 
 export default function BuildTogether() {
     const theme : Theme = useTheme();
@@ -23,7 +24,7 @@ export default function BuildTogether() {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs = {12} md = {12} lg = {5}>
-                                    <img src = "./build-something-great.png"/>
+                                    <Image alt = "building-image" width={1000} height={1000} src = "/final-CTA.png"/>
                                 </Grid>
                             </Grid>
                         </CardContent>

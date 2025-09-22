@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
-import { coFounders, restOfTheTeam } from "@/data/restOfTheTheme";
+import { coFounders, restOfTheTeam } from "@/data/restOfTheTeam";
 import Image from "next/image";
 
 export default function WhoWeAre() {

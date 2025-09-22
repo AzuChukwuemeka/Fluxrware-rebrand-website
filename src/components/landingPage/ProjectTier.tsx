@@ -10,7 +10,7 @@ export default function ProjectTier() {
     const theme : Theme = useTheme();
     return (
         <React.Fragment>
-          <Box style = {{background: "radial-gradient(circle at left, #fefefe 90%, lightblue) 200% 200%"}}>
+          <Box sx = {{background: "radial-gradient(circle at left, #fefefe 90%, lightblue) 200% 200%", paddingTop: theme.spacing(10)}}>
             <Container>
               <Typography variant = "h3" textAlign={"center"} fontWeight={"bold"}>
                 <span style = {{color: theme.palette.primary.main}}>Flexible</span> Tier for <span style = {{color: "grey"}}>Every</span> Project
@@ -21,7 +21,7 @@ export default function ProjectTier() {
               <Grid container spacing = {1}>
                 {projectTier.map((projectTier,index) => {
                   return (
-                    <Grid item xs={12} md={12} lg={12/3}>
+                    <Grid key = {projectTier.tier} item xs={12} md={12} lg={12/3}>
                         <Card sx = {{borderRadius: theme.spacing(4), padding: theme.spacing(1)}} variant="outlined">
                           <CardContent>
                             <Box display={"flex"} justifyContent={"space-between"}>
@@ -36,7 +36,7 @@ export default function ProjectTier() {
                             <Typography variant = "body2" marginTop={3}  marginBottom={4} lineHeight={2.5}>
                               {projectTier.services.map((service,index) => {
                                 return (
-                                  <React.Fragment>
+                                  <React.Fragment key = {index}>
                                     {service.offered && <CheckboxIcon sx = {{color: theme.fluxware.goodTickColor}} />}
                                     {!service.offered && <CancelRoundedIcon sx = {{color: theme.fluxware.badTickColor}} />}
                                     {service.detail} <br />

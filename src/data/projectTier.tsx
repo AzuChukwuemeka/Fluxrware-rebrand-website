@@ -153,5 +153,5 @@ export const projectTier : Array<projectTierElement> = [
                 offered: true
             },
         ]
-    }
+    },
 ]

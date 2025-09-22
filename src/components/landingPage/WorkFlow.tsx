@@ -2,7 +2,7 @@ import React from "react";
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import FluxPictureText from "@/components/global/FluxUI/FluxPictureText";
+import FluxPictureText from "@/components/global/fluxUI/FluxPictureText";
 
 
 import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
