@@ -43,9 +43,11 @@ export default function ProjectTier() {
                               {projectTier.services.map((service,index) => {
                                 return (
                                   <React.Fragment key = {index}>
-                                    {service.offered && <CheckboxIcon sx = {{color: theme.fluxware.goodTickColor}} />}
-                                    {!service.offered && <CancelRoundedIcon sx = {{color: theme.fluxware.badTickColor}} />}
-                                    {service.detail} <br />
+                                    <Typography variant="body2" marginBottom={2}>
+                                      {service.offered && <CheckboxIcon sx = {{color: theme.fluxware.goodTickColor, marginRight: theme.spacing(1)}} />}
+                                      {!service.offered && <CancelRoundedIcon sx = {{color: theme.fluxware.badTickColor, marginRight: theme.spacing(1)}} />}
+                                      {service.detail} <br />                
+                                    </Typography>
                                   </React.Fragment>                                  
                                 )
                               })}

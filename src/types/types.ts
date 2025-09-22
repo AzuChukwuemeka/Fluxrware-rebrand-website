@@ -29,7 +29,7 @@ export interface productOffered {
     title: string,
     description: string,
     img: string,
-    smallImg?: string
+    smallImg: string
 }
 export interface navItems {
     name: string,

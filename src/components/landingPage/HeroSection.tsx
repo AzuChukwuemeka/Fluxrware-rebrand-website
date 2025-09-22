@@ -23,7 +23,7 @@ export default function HeroSection() {
                     <Box
                         marginTop={theme.spacing(9)} 
                         paddingBlock={theme.spacing(.5)}
-                        paddingInline={theme.spacing(2)}
+                        paddingInline={theme.spacing(3)}
                         borderRadius={theme.shape.borderRadius}
                         border={1}
                         borderColor={"divider"}
@@ -39,7 +39,7 @@ export default function HeroSection() {
                         <Avatar alt="User Served" src="./served2.jpg" sx = {{width: 24, height: 24}}/>
                         <Avatar alt="User Served" src="./served3.jpg" sx = {{width: 24, height: 24}}/>
                         </Stack>
-                        <Typography variant="body2" textAlign="center" letterSpacing={theme.spacing(.1)} fontWeight={500}>
+                        <Typography variant="body2" textAlign="center" letterSpacing={theme.spacing(.05)} fontWeight={500}>
                             Served over 200+ Happy Clients
                         </Typography>
                     </Box>

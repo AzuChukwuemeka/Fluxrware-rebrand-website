@@ -1,6 +1,6 @@
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
-import { Roboto } from 'next/font/google';
+import { Manrope, Poppins, Roboto, Work_Sans } from 'next/font/google';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import Head from "next/head";
@@ -12,6 +12,19 @@ const roboto = Roboto({
   display: 'swap',
   variable: '--font-roboto',
 });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ['300', '400', '500', '700'],
+  display: 'swap',
+  variable: '--font-poppins',
+})
+const worksans = Work_Sans({
+  subsets: ["latin"],
+  weight: ['300', '400', '500', '700'],
+  display: 'swap',
+  variable: '--font-worksans',
+})
+
 export const metadata = {
   title: "Fluxrware Website"
 }
@@ -22,7 +35,7 @@ export const viewport = {
 
 export default function RootLayout(props: Readonly<{ children: React.ReactNode;}>) {
   return (
-      <html lang="en" className={roboto.variable}>
+      <html lang="en" className={poppins.variable}>
         <body>
           <AppRouterCacheProvider>
             <ThemeProvider theme={theme}>

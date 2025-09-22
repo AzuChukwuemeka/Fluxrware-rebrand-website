@@ -23,8 +23,11 @@ export default function OurWork() {
             <Grid container spacing={2} justifyContent={"center"} paddingBottom={2}>
               {customerReviewsRowOne.map((customerReview, index) => {
                 return (
-                  <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 4}>
-                    <Card variant="outlined">
+                  <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 3.5}>
+                    <Card sx = {{
+                      border: "1.5px solid lightblue",
+                      borderRadius: theme.spacing(5),
+                    }}>
                       <CardContent>
                         <FluxPictureText>
                           <Avatar
@@ -33,7 +36,7 @@ export default function OurWork() {
                               backgroundColor: generateRandomColor()
                             }}
                           >{customerReview.name.charAt(0)}</Avatar>
-                          <Typography fontWeight={"bold"}>
+                          <Typography variant="body1">
                             {customerReview.name}
                           </Typography>
                         </FluxPictureText>
@@ -51,7 +54,10 @@ export default function OurWork() {
               {customerReviewsRowTwo.map((customerReview, index) => {
                 return (
                   <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 4}>
-                    <Card variant="outlined">
+                    <Card sx = {{
+                      border: "1.5px solid lightblue",
+                      borderRadius: theme.spacing(5),
+                    }}>
                       <CardContent>
                         <FluxPictureText>
                           <Avatar
@@ -60,7 +66,7 @@ export default function OurWork() {
                               backgroundColor: generateRandomColor()
                             }}
                           >{customerReview.name.charAt(0)}</Avatar>
-                          <Typography fontWeight={"bold"}>
+                          <Typography variant="body1">
                             {customerReview.name}
                           </Typography>
                         </FluxPictureText>
@@ -77,8 +83,11 @@ export default function OurWork() {
             <Grid container spacing={2} justifyContent={"center"} paddingBottom={2}>
               {customerReviewsRowThree.map((customerReview, index) => {
                 return (
-                  <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 4}>
-                    <Card variant="outlined">
+                  <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 3.5}>
+                    <Card sx = {{
+                      border: "1.5px solid lightblue",
+                      borderRadius: theme.spacing(5),
+                    }}>
                       <CardContent>
                         <FluxPictureText>
                           <Avatar
@@ -87,7 +96,7 @@ export default function OurWork() {
                               backgroundColor: generateRandomColor()
                             }}
                           >{customerReview.name.charAt(0)}</Avatar>
-                          <Typography fontWeight={"bold"}>
+                          <Typography variant="body1">
                             {customerReview.name}
                           </Typography>
                         </FluxPictureText>

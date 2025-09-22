@@ -5,7 +5,7 @@ type picture  = {
 }
 export default function FluxPictureText(props: picture)  {
     return (
-        <Box display = {"flex"} paddingBlock={2} alignItems={"center"}>
+        <Box display = {"flex"} paddingBlock={1} alignItems={"center"}>
             {props.children}
         </Box>
     )

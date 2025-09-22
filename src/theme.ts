@@ -20,7 +20,22 @@ let theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'var(--font-roboto)',
+    fontFamily: 'var(--font-poppins)',
+    h1: {
+      fontFamily: 'var(--font-worksans)',
+    },
+    h2: {
+      fontFamily: 'var(--font-worksans)',
+    },
+    h3: {
+      fontFamily: 'var(--font-worksans)',
+    },
+    h4: {
+      fontFamily: 'var(--font-worksans)',
+    },
+    h5: {
+      fontFamily: 'var(--font-worksans)',
+    }
   },
   fluxware: {
     goodTickColor: "green",

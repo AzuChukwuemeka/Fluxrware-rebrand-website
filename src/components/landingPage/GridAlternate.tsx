@@ -41,12 +41,12 @@ function Normal(props: gridAlternateProp){
         <>
             <Grid item xs = {12/ 1} md = {6}>
                 <FluxPictureText>
-                    <Avatar src = {props.item.smallImg} sx = {{marginRight: theme.spacing(2)}}/>
-                    <Typography variant="h5" textAlign={"justify"} fontWeight={"bold"}>
+                    <Image alt = {props.item.smallImg} width = {50} height = {50} src = {props.item.smallImg} style = {{marginRight: theme.spacing(2)}}/>
+                    <Typography variant="h5" textAlign={"justify"} fontWeight={"bold"} >
                         {props.item.title}
                     </Typography>
                 </FluxPictureText>
-                <Typography variant = "body1" textAlign={"justify"}>
+                <Typography variant = "body2" textAlign={"justify"} marginTop={theme.spacing(2)} lineHeight={theme.spacing(3)}>
                     {props.item.description}
                 </Typography>
             </Grid>
@@ -90,12 +90,12 @@ function Alternate(props: gridAlternateProp){
             </Grid>
              <Grid item xs = {12/ 1} md = {6}>
                 <FluxPictureText>
-                    <Avatar src = {props.item.smallImg} sx = {{marginRight: theme.spacing(2)}}/>
+                    <Image alt = {props.item.smallImg} width = {50} height = {50} src = {props.item.smallImg} style = {{marginRight: theme.spacing(2)}}/>
                     <Typography variant="h5" textAlign={"justify"} fontWeight={"bold"}>
                         {props.item.title}
                     </Typography>
                 </FluxPictureText>
-                <Typography variant = "body1" textAlign={"justify"}>
+                <Typography variant = "body2" textAlign={"justify"} marginTop={theme.spacing(2)} lineHeight={theme.spacing(3)}>
                     {props.item.description}
                 </Typography>
             </Grid>
@@ -109,12 +109,12 @@ function SmallScreens(props: gridAlternateProp){
         <>
             <Grid item lg = {1}>
                 <FluxPictureText>
-                    <Avatar src = {props.item.smallImg} sx = {{marginRight: theme.spacing(2)}}/>
+                    <Image alt = {props.item.smallImg} width = {50} height = {50} src = {props.item.smallImg} style = {{marginRight: theme.spacing(2)}}/>
                     <Typography variant="h5" fontWeight={"bold"}>
                         {props.item.title}
                     </Typography>
                 </FluxPictureText>
-                <Typography variant = "body1">
+                <Typography variant = "body2" textAlign={"justify"} marginTop={theme.spacing(2)} lineHeight={theme.spacing(3)}>
                     {props.item.description}
                 </Typography>
             </Grid>

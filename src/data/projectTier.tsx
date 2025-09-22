@@ -4,7 +4,7 @@ export const projectTier : Array<projectTierElement> = [
     {
         tier: "Standard",
         price: 399,
-        description: "Perfect for start-ups or personal brands.",
+        description: "Perfect for start-ups/personal brands.",
         services: [
             {
                 detail: "Full scale custom website.",

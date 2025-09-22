@@ -14,7 +14,7 @@ export default function WhatWeOffer() {
           <Typography variant = "h3" textAlign={"center"} paddingTop={theme.spacing(10)} fontWeight = "bold">
             What We <span style = {{color: theme.palette.primary.main}}>Offer</span>
           </Typography>
-          <Typography variant = "body1" textAlign={"center"} paddingTop={theme.spacing(4)} paddingBottom={10} fontWeight={"bold"}>
+          <Typography variant = "body1" textAlign={"center"} paddingTop={theme.spacing(4)} paddingBottom={10}>
             Solutions tailored to grow your business from the ground up.
           </Typography>
           <Grid container spacing = {theme.spacing(10)} alignItems={"center"}>
