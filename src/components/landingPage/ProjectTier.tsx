@@ -1,3 +1,4 @@
+'use client';
 import { Box, Button, Card, CardContent, Container, Grid, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 import CheckboxIcon from '@mui/icons-material/CheckBox';
@@ -10,7 +11,12 @@ export default function ProjectTier() {
     const theme : Theme = useTheme();
     return (
         <React.Fragment>
-          <Box sx = {{background: "radial-gradient(circle at left, #fefefe 90%, lightblue) 200% 200%", paddingTop: theme.spacing(10)}}>
+          <Box sx = {{
+            backgroundColor: "#fefefe", 
+            backgroundImage: "url(./blue-blob.png)",
+            backgroundRepeat: "no-repeat",
+            paddingTop: theme.spacing(10)
+          }}>
             <Container>
               <Typography variant = "h3" textAlign={"center"} fontWeight={"bold"}>
                 <span style = {{color: theme.palette.primary.main}}>Flexible</span> Tier for <span style = {{color: "grey"}}>Every</span> Project

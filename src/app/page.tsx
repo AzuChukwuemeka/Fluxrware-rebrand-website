@@ -1,4 +1,3 @@
-'use client';
 import WhatWeOffer from "@/components/landingPage/WhatWeOffer";
 import ProjectTier from "@/components/landingPage/ProjectTier";
 import OurWork from "@/components/landingPage/OurWork";
