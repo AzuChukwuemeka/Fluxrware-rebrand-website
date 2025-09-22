@@ -6,7 +6,7 @@ import Link from "next/link";
 import React from "react"
 
 export default function Desktopnavbar() {
-    const theme : Theme = useTheme();
+    const theme: Theme = useTheme();
     return (
         <React.Fragment>
             <Container maxWidth="md" sx={{

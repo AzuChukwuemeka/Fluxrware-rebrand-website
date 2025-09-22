@@ -24,7 +24,7 @@ export default function OurWork() {
               {customerReviewsRowOne.map((customerReview, index) => {
                 return (
                   <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 3.5}>
-                    <Card sx = {{
+                    <Card sx={{
                       border: "1.5px solid lightblue",
                       borderRadius: theme.spacing(5),
                     }}>
@@ -54,7 +54,7 @@ export default function OurWork() {
               {customerReviewsRowTwo.map((customerReview, index) => {
                 return (
                   <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 4}>
-                    <Card sx = {{
+                    <Card sx={{
                       border: "1.5px solid lightblue",
                       borderRadius: theme.spacing(5),
                     }}>
@@ -84,7 +84,7 @@ export default function OurWork() {
               {customerReviewsRowThree.map((customerReview, index) => {
                 return (
                   <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 3.5}>
-                    <Card sx = {{
+                    <Card sx={{
                       border: "1.5px solid lightblue",
                       borderRadius: theme.spacing(5),
                     }}>

@@ -9,7 +9,7 @@ import React, { useState } from "react"
 
 export default function MobileNavbar() {
   const [open, setOpen] = useState(false);
-  const theme : Theme = useTheme();
+  const theme: Theme = useTheme();
   const toggleDrawer = () => {
     setOpen(prev => !prev);
   };
@@ -34,7 +34,7 @@ export default function MobileNavbar() {
           marginTop: theme.spacing(4),
         }}
       >
-        <Toolbar disableGutters sx={{ paddingInline: 4}}>
+        <Toolbar disableGutters sx={{ paddingInline: 4 }}>
           <Stack
             direction={"row"}
             alignItems={"center"}
@@ -72,12 +72,12 @@ export default function MobileNavbar() {
           </IconButton>
         </Stack>
         <Divider />
-        <List sx = {{display: "flex", flexDirection: "column"}}>
+        <List sx={{ display: "flex", flexDirection: "column" }}>
           {navLinks.map((value) => (
             <ListItem key={value.link} disablePadding>
               <ListItemButton>
-                <Link href={value.link} style = {{display: "block", width: "100%"}}>
-                    <ListItemText primary={value.name} />
+                <Link href={value.link} style={{ display: "block", width: "100%" }}>
+                  <ListItemText primary={value.name} />
                 </Link>
               </ListItemButton>
             </ListItem>

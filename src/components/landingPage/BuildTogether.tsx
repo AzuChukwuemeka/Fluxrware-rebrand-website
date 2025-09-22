@@ -21,7 +21,7 @@ export default function BuildTogether() {
                             <Grid container marginTop={7}>
                                 <Grid item xs = {12} md = {12} lg = {7}>
                                     <Typography>
-
+                                        Coming to work on this section
                                     </Typography>
                                 </Grid>
                                 <Grid item xs = {12} md = {12} lg = {5}>

@@ -11,7 +11,7 @@ export const projectTier : Array<projectTierElement> = [
                 offered: true
             },
             {
-                detail: "UI/UX system tailored for user flow & engagement.",
+                detail: "UI/UX system tailored for flow & engagement.",
                 offered: true
             },
             {
@@ -62,7 +62,7 @@ export const projectTier : Array<projectTierElement> = [
                 offered: true
             },
             {
-                detail: "UI/UX system tailored for user flow & engagement.",
+                detail: "UI/UX system tailored for flow & engagement.",
                 offered: true
             },
             {
@@ -113,7 +113,7 @@ export const projectTier : Array<projectTierElement> = [
                 offered: true
             },
             {
-                detail: "UI/UX system tailored for user flow & engagement.",
+                detail: "UI/UX system tailored for flow & engagement.",
                 offered: true
             },
             {
