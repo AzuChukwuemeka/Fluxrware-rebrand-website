@@ -32,9 +32,11 @@ export default function MobileNavbar() {
           background: "transparent",
           borderRadius: theme.spacing(8),
           marginTop: theme.spacing(4),
+          boxShadow: "none",
+          border: "1px solid #aaa"
         }}
       >
-        <Toolbar disableGutters sx={{ paddingInline: 4 }}>
+        <Toolbar disableGutters sx={{ paddingInline: 3 }}>
           <Stack
             direction={"row"}
             alignItems={"center"}
@@ -45,7 +47,7 @@ export default function MobileNavbar() {
             </Link>
 
             <Link href="" style={{ flexGrow: 1 }}>
-              <Typography variant="body1" textAlign={"center"}>
+              <Typography variant="h5" textAlign={"center"}>
                 Fluxware
               </Typography>
             </Link>
@@ -64,12 +66,12 @@ export default function MobileNavbar() {
           direction="row"
           alignItems="center"
           justifyContent="space-between"
-          sx={{ padding: 2, minWidth: 250 }}
+          sx={{minWidth: 250 }}
         >
-          <Typography variant="h6">Menu</Typography>
-          <IconButton onClick={toggleDrawer}>
+          <img alt={"Fluxware-logo"} width={100} src="/fluxware-logo.png" />
+          {/* <IconButton onClick={toggleDrawer}>
             <CloseIcon />
-          </IconButton>
+          </IconButton> */}
         </Stack>
         <Divider />
         <List sx={{ display: "flex", flexDirection: "column" }}>
@@ -77,7 +79,9 @@ export default function MobileNavbar() {
             <ListItem key={value.link} disablePadding>
               <ListItemButton>
                 <Link href={value.link} style={{ display: "block", width: "100%" }}>
-                  <ListItemText primary={value.name} />
+                  <Typography variant="body1">
+                    {value.name}
+                  </Typography>
                 </Link>
               </ListItemButton>
             </ListItem>

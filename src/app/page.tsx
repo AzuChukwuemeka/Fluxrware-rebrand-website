@@ -6,18 +6,20 @@ import MoreInfo from "@/components/landingPage/MoreInfo";
 import WorkFlow from "@/components/landingPage/WorkFlow";
 import HeroSection from "@/components/landingPage/HeroSection";
 import BuildTogether from "@/components/landingPage/BuildTogether";
+import Footer from "@/components/landingPage/Footer";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <WorkFlow />
-      <WhatWeOffer/>
-      <ProjectTier/>
+      <WhatWeOffer />
+      <ProjectTier />
       <OurWork />
       <WhoWeAre />
       <MoreInfo />
       <BuildTogether />
+      <Footer />
     </>
   );
 }
