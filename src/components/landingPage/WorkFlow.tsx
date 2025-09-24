@@ -24,8 +24,12 @@ export default function WorkFlow() {
                     </Typography>
                     <Grid container spacing={theme.spacing(4)}>
                         <Grid item xs={12} sm={12} md={5}>
-                            <Card sx={{ padding: theme.spacing(2) }}>
-                                <CardContent sx={{ display: "flex", alignItems: "center" }}>
+                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3), borderRadius: theme.spacing(5) }}>
+                                <CardContent sx={{ 
+                                    display: "flex", 
+                                    alignItems: "center",
+                                    boxShadow: "none" 
+                                }}>
                                     <LightbulbIcon sx={{ color: "purple", marginRight: theme.spacing(2) }} fontSize="large" />
                                     <Typography variant="h4" flexGrow={1} fontWeight={"bold"}>
                                         Discovery
@@ -57,8 +61,12 @@ export default function WorkFlow() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={12} md={7}>
-                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3) }}>
-                                <CardContent>
+                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3), borderRadius: theme.spacing(5) }}>
+                                <CardContent sx={{ 
+                                    display: "flex", 
+                                    alignItems: "center",
+                                    boxShadow: "none" 
+                                }}>
                                     <Grid container alignItems="flex-start">
                                         <Grid item xs={12} sm={12} md={3} alignSelf="flex-start" paddingBottom={theme.spacing(3)}>
                                             <img
@@ -92,9 +100,11 @@ export default function WorkFlow() {
                                 </CardContent>
                             </Card>
 
-                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3), borderRadius: theme.shape.borderRadius }}>
+                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3), borderRadius: theme.spacing(5) }}>
                                 <CardContent sx={{
                                     background: "radial-gradient(circle at top left, transparent 92%, brown) 200% 200%",
+                                    alignItems: "center",
+                                    boxShadow: "none" 
                                 }}>
                                     <Box display={"flex"} alignItems={"center"}>
                                         <img src="./rocket.png" style={{ marginRight: theme.spacing(3) }} />
@@ -118,6 +128,8 @@ export default function WorkFlow() {
                             <Card variant="outlined" sx={{ marginBottom: theme.spacing(3), borderRadius: theme.spacing(5) }}>
                                 <CardContent sx={{
                                     background: "radial-gradient(circle at bottom right, transparent 90%, lightgreen) 200% 200%",
+                                    alignItems: "center",
+                                    boxShadow: "none" 
                                 }}>
                                     <Box display={"flex"} alignItems={"center"}>
                                         <img

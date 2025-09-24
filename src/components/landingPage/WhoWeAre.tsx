@@ -32,7 +32,10 @@ export default function WhoWeAre() {
                   return (
                     <Grid key={coFounders.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 2}>
                       <Box>
-                        <Image alt={`Co-Founder: ${coFounders.name}`} src={coFounders.img} height={1000} width={1000} />
+                        <Image alt={`Co-Founder: ${coFounders.name}`} src={coFounders.img} height={1000} width={1000} style = {{
+                          height: "400px",
+                          // width: "400px"
+                        }}/>
                         <Typography variant="h6" fontWeight={"bold"}>
                           {coFounders.name}
                         </Typography>
@@ -55,7 +58,9 @@ export default function WhoWeAre() {
               return (
                 <Grid key={staffData.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 8}>
                   <Box>
-                    <Image alt={`Fluxware Staff: ${staffData.name}`} src={staffData.img} style={{ borderRadius: "20px" }} width={1000} height={1000} />
+                    <Image alt={`Fluxware Staff: ${staffData.name}`} src={staffData.img} style={{ borderRadius: "20px" }} width={1000} height={1000} style = {{
+                      height: "350px"
+                    }}/>
                     <Typography variant="body1" fontWeight={"bold"}>
                       {staffData.name}
                     </Typography>
