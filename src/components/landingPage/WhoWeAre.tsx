@@ -31,9 +31,12 @@ export default function WhoWeAre() {
                 {coFounders.map((coFounders, index) => {
                   return (
                     <Grid key={coFounders.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 2}>
-                      <Box>
+                      <Box display={"flex"} flexDirection={"column"} alignItems={"center"} textAlign={"center"} gap={1}>
                         <Image alt={`Co-Founder: ${coFounders.name}`} src={coFounders.img} height={1000} width={1000} style = {{
-                          height: "400px",
+                          height: "200px",
+                          width: "200px",
+                          borderRadius: theme.spacing(3),
+                          objectFit: "cover",
                           // width: "400px"
                         }}/>
                         <Typography variant="h6" fontWeight={"bold"}>
@@ -57,9 +60,12 @@ export default function WhoWeAre() {
             {restOfTheTeam.map((staffData, index) => {
               return (
                 <Grid key={staffData.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 8}>
-                  <Box>
+                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"} textAlign={"center"} gap={1}>
                     <Image alt={`Fluxware Staff: ${staffData.name}`} src={staffData.img} style={{ borderRadius: "20px" }} width={1000} height={1000} style = {{
-                      height: "350px"
+                      height: "200px",
+                      width: "200px",
+                      borderRadius: theme.spacing(3),
+                      objectFit: "cover",
                     }}/>
                     <Typography variant="body1" fontWeight={"bold"}>
                       {staffData.name}
