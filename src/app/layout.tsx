@@ -4,26 +4,12 @@ import { Poppins, Roboto, Work_Sans } from 'next/font/google';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import { ToastContainer } from "react-toastify";
-
-const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto',
-});
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ['300', '400', '500', '700'],
   display: 'swap',
   variable: '--font-poppins',
 })
-const worksans = Work_Sans({
-  subsets: ["latin"],
-  weight: ['300', '400', '500', '700'],
-  display: 'swap',
-  variable: '--font-worksans',
-})
-
 export const metadata = {
   title: "Fluxrware Website"
 }

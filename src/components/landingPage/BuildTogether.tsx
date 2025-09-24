@@ -24,7 +24,7 @@ export default function BuildTogether() {
                     }}>
                         <CardContent>
                             <Typography variant="h4" fontWeight={"bold"}>
-                                Let's Build <br /> Something Great <span style={{ color: theme.palette.primary.main }}>Together</span>
+                                Let&apos;s Build <br /> Something Great <span style={{ color: theme.palette.primary.main }}>Together</span>
                             </Typography>
                             <Typography variant="body2" marginTop={theme.spacing(4)} fontWeight={"bold"}>
                                 From sleek sites to smart apps, Fluxrware brings your vision to life, Just tell us where to start

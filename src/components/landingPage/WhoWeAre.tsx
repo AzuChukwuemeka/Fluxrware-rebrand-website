@@ -15,12 +15,12 @@ export default function WhoWeAre() {
             Who We <span style={{ color: theme.palette.primary.main }}>Are</span>
           </Typography>
           <Typography variant="body2" textAlign={"center"} paddingTop={theme.spacing(2)} fontWeight={"bold"}>
-            More than just code, it's about the people behind the projects
+            More than just code, it&apos;s about the people behind the projects
           </Typography>
           <Grid container marginTop={theme.spacing(3)} spacing={theme.spacing(7)}>
             <Grid item xs={12 / 1} md={12 / 1} lg={7}>
               <Typography variant="h3" fontWeight={"bold"}>
-                What's <span style={{ color: "grey" }}>Fluxrware</span> All About?
+                What&apos;s <span style={{ color: "grey" }}>Fluxrware</span> All About?
               </Typography>
               <Typography variant="body2" textAlign={"justify"} paddingTop={theme.spacing(2)} lineHeight={theme.spacing(4)}>
                 At Fluxrware, we bring ideas to life through impactful digital expertiences. As a forward-thinking web development agency, we design and build sleek, high-performance websites and web apps tailored to your goals. By combining thoughtful UX, modern design, and the latest tech, we turn complex visions into powerful digital platforms.

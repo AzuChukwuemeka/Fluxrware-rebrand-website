@@ -3,8 +3,6 @@ import React from "react";
 import { Accordion, AccordionDetails, AccordionSummary, Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
 import { moreInfoQuestions } from "@/data/moreInfo";
 import { ArrowDownwardOutlined } from "@mui/icons-material";
-import { before } from "node:test";
-
 
 export default function MoreInfo() {
   const theme: Theme = useTheme();
@@ -17,7 +15,7 @@ export default function MoreInfo() {
             Need a Little More <span style={{ color: theme.palette.primary.main }}>Info?</span>
           </Typography>
           <Typography textAlign={"center"} variant="body2" fontWeight={"bold"} marginTop={4}>
-            Can't find what you need? Our FAQs have more details
+            Can&apos;t find what you need? Our FAQs have more details
           </Typography>
           <Grid container spacing={8} paddingTop = {theme.spacing(8)}>
             {moreInfoQuestions.map((question, index) => {

@@ -3,7 +3,6 @@ import React from "react";
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import FluxPictureText from "@/components/global/fluxUI/FluxPictureText";
 
 
 import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
@@ -135,7 +134,7 @@ export default function WorkFlow() {
                                         <ArrowDownwardIcon fontSize="large" />
                                     </Box>
                                     <Typography variant="body1" paddingBlock={theme.spacing(2)}>
-                                        <b>Ongoing partnership:</b> We provide continuous support and optimization to keep your website at it's best.
+                                        <b>Ongoing partnership:</b> We provide continuous support and optimization to keep your website at it&apos;s best.
                                     </Typography>
                                     <Typography variant="body1" paddingBlock={theme.spacing(2)}>
                                         <b>Evolving for the Future:</b> We offer strategic guidance to help you adapt, scale and stay ahead of the competition.
