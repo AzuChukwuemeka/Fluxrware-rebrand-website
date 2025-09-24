@@ -2,6 +2,7 @@
 import { projectTypes } from "@/data/projectTypes";
 import { Button, MenuItem, TextField, Theme, useTheme } from "@mui/material";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 
 export default function BuildForm() {
@@ -14,6 +15,7 @@ export default function BuildForm() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Do things with this later
+        toast.success("We will get back to you!")
     }
     const handleNameInputOnChangeEvent = (e: React.ChangeEvent<HTMLInputElement>) => {
         setName(e.target.value);
