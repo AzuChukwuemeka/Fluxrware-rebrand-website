@@ -3,7 +3,7 @@ import { productOffered } from "@/types/types";
 import { Avatar, Box, Grid, Theme, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 import Image from "next/image";
-import FluxPictureText from "../global/fluxUI/FluxPictureText";
+import { FluxPictureText } from "../global/fluxUI/FluxPictureText";
 
 interface gridAlternateProp {
     item: productOffered,
