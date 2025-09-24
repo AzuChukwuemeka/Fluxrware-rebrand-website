@@ -61,7 +61,7 @@ export default function OurWork() {
                       borderRadius: theme.spacing(5),
                     }}>
                       <CardContent>
-                        <FluxPictureText>
+                        <Box display={"flex"} paddingBlock={1} alignItems={"center"}>
                           <Avatar
                             sx={{
                               marginRight: theme.spacing(2),
@@ -71,7 +71,7 @@ export default function OurWork() {
                           <Typography variant="body1">
                             {customerReview.name}
                           </Typography>
-                        </FluxPictureText>
+                        </Box>
                         <Typography fontWeight={"bold"} variant="body2">
                           {customerReview.review}
                         </Typography>
@@ -92,7 +92,7 @@ export default function OurWork() {
                       borderRadius: theme.spacing(5),
                     }}>
                       <CardContent>
-                        <FluxPictureText>
+                        <Box display={"flex"} paddingBlock={1} alignItems={"center"}>
                           <Avatar
                             sx={{
                               marginRight: theme.spacing(2),
@@ -102,7 +102,7 @@ export default function OurWork() {
                           <Typography variant="body1">
                             {customerReview.name}
                           </Typography>
-                        </FluxPictureText>
+                        </Box>
                         <Typography fontWeight={"bold"} variant="body2">
                           {customerReview.review}
                         </Typography>
