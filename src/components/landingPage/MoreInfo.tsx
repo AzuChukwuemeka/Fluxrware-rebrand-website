@@ -17,7 +17,7 @@ export default function MoreInfo() {
           <Typography textAlign={"center"} variant="body2" marginTop={4}>
             Can&apos;t find what you need? Our FAQs have more details
           </Typography>
-          <Grid container spacing={8} paddingTop = {theme.spacing(8)}>
+          <Grid container spacing={5} paddingTop = {theme.spacing(8)}>
             {moreInfoQuestions.map((question, index) => {
               return (
 
