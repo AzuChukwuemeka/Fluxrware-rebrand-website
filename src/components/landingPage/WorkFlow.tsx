@@ -3,9 +3,7 @@ import React from "react";
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-
-
-import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
+import { Box, Card, CardContent, Container, Grid,  Theme, Typography, useTheme } from "@mui/material";
 
 
 export default function WorkFlow() {
