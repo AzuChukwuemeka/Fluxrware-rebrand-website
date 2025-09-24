@@ -15,7 +15,7 @@ export default function BuildTogether() {
             }} paddingTop={theme.spacing(6)}>
                 <Container maxWidth="lg">
                     <Card variant="outlined" sx={{
-                        padding: theme.spacing(5),
+                        padding: theme.spacing(2),
                         backgroundImage: "url(./blue-blob.png)",
                         backgroundSize: "80% auto",
                         backgroundPosition: "right",
@@ -37,7 +37,10 @@ export default function BuildTogether() {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12} md={12} lg={5}>
-                                    <Image alt="building-image" width={1000} height={1000} src="/final-CTA.png" />
+                                    <Image alt="building-image" width={1200} height={1200} src="/final-CTA.png" style = {{
+                                        width: "100%",
+                                        height: "100%",
+                                    }}/>
                                 </Grid>
                             </Grid>
                         </CardContent>
