@@ -15,7 +15,7 @@ export default function OurWork() {
           <Typography fontWeight={"bold"} variant="h3" textAlign={"center"}>
             Our <span style={{ color: theme.palette.primary.main }}>Work,</span> Through Their <span style={{ color: "grey" }}>Lens</span>
           </Typography>
-          <Typography fontWeight={"bold"} variant="body1" textAlign={"center"} marginBlock={theme.spacing(5)}>
+          <Typography variant="body1" textAlign={"center"} marginBlock={theme.spacing(5)}>
             Their words, their success, our shared story
           </Typography>
           <Box>
