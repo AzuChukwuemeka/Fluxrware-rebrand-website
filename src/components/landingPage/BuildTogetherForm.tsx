@@ -41,7 +41,12 @@ export default function BuildForm() {
                     onChange={handleNameInputOnChangeEvent}
                     fullWidth
                     margin="normal"
-                    sx = {{background: theme.palette.primary.contrastText}}
+                    sx = {{
+                        background: theme.palette.primary.contrastText, borderRadius: theme.spacing(4),
+                        "& .MuiOutlinedInput-root": {
+                        borderRadius: theme.spacing(3),
+                        },
+                    }}
                 />
                 <TextField
                     label="Email"
@@ -50,7 +55,12 @@ export default function BuildForm() {
                     onChange={handleEmailInputOnChangeEvent}
                     fullWidth
                     margin="normal"
-                    sx = {{background: theme.palette.primary.contrastText}}
+                    sx = {{
+                        background: theme.palette.primary.contrastText, borderRadius: theme.spacing(4),
+                        "& .MuiOutlinedInput-root": {
+                        borderRadius: theme.spacing(3),
+                        },
+                    }}
                 />
 
                 <TextField
@@ -59,7 +69,12 @@ export default function BuildForm() {
                     onChange={handleProjectSelectOnChangeEvent}
                     fullWidth
                     value={project}
-                    sx = {{background: theme.palette.primary.contrastText}}
+                    sx = {{
+                        background: theme.palette.primary.contrastText, borderRadius: theme.spacing(4),
+                        "& .MuiOutlinedInput-root": {
+                        borderRadius: theme.spacing(3),
+                        },
+                    }}
                 >
                     {projectTypes.map((projectType,index) => {
                         return (
@@ -75,7 +90,12 @@ export default function BuildForm() {
                     fullWidth
                     onChange={handleDescriptionTextAreaOnChangeEvent}
                     margin="normal"
-                    sx = {{background: theme.palette.primary.contrastText}}
+                    sx = {{
+                        background: theme.palette.primary.contrastText, borderRadius: theme.spacing(4),
+                        "& .MuiOutlinedInput-root": {
+                        borderRadius: theme.spacing(3),
+                        },
+                    }}
                 />
                 <Button variant="contained" fullWidth
                     sx={{
