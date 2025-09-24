@@ -14,7 +14,7 @@ export default function MoreInfo() {
           <Typography textAlign={"center"} variant="h3">
             Need a Little More <span style={{ color: theme.palette.primary.main }}>Info?</span>
           </Typography>
-          <Typography textAlign={"center"} variant="body2" fontWeight={"bold"} marginTop={4}>
+          <Typography textAlign={"center"} variant="body2" marginTop={4}>
             Can&apos;t find what you need? Our FAQs have more details
           </Typography>
           <Grid container spacing={8} paddingTop = {theme.spacing(8)}>
