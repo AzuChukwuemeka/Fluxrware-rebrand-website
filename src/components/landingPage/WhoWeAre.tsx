@@ -61,7 +61,7 @@ export default function WhoWeAre() {
               return (
                 <Grid key={staffData.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 8}>
                   <Box display={"flex"} flexDirection={"column"} alignItems={"center"} textAlign={"center"} gap={1}>
-                    <Image alt={`Fluxware Staff: ${staffData.name}`} src={staffData.img} style={{ borderRadius: "20px" }} width={1000} height={1000} style = {{
+                    <Image alt={`Fluxware Staff: ${staffData.name}`} src={staffData.img} width={1000} height={1000} style = {{
                       height: "200px",
                       width: "200px",
                       borderRadius: theme.spacing(3),
