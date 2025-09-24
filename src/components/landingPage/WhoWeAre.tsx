@@ -28,11 +28,11 @@ export default function WhoWeAre() {
             </Grid>
             <Grid item xs={12 / 1} md={12 / 1} lg={5}>
               <Grid container spacing={theme.spacing(3)}>
-                {coFounders.map((coFounders, index) => {
+                {coFounders.map((founder, index) => {
                   return (
-                    <Grid key={coFounders.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 2}>
+                    <Grid key={founder.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 2}>
                       <Box display={"flex"} flexDirection={"column"} alignItems={"center"} textAlign={"center"} gap={1}>
-                        <Image alt={`Co-Founder: ${coFounders.name}`} src={coFounders.img} height={1000} width={1000} style = {{
+                        <Image alt={`Co-Founder: ${founder.name}`} src={founder.img} height={1000} width={1000} style = {{
                           height: "200px",
                           width: "200px",
                           borderRadius: theme.spacing(3),
@@ -40,10 +40,10 @@ export default function WhoWeAre() {
                           // width: "400px"
                         }}/>
                         <Typography variant="h6" fontWeight={"bold"}>
-                          {coFounders.name}
+                          {founder.name}
                         </Typography>
                         <Typography variant="body2">
-                          {coFounders.position}
+                          {founder.position}
                         </Typography>
                       </Box>
                     </Grid>
