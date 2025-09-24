@@ -17,7 +17,7 @@ export default function WhoWeAre() {
           <Typography variant="body2" textAlign={"center"} paddingTop={theme.spacing(1)}>
             More than just code, it&apos;s about the people behind the projects
           </Typography>
-          <Grid container marginTop={theme.spacing(3)} spacing={theme.spacing(7)}>
+          <Grid container marginTop={theme.spacing(1.5)} spacing={theme.spacing(7)}>
             <Grid item xs={12 / 1} md={12 / 1} lg={7}>
               <Typography variant="h3" fontWeight={"bold"}>
                 What&apos;s <span style={{ color: "grey" }}>Fluxrware</span> All About?
