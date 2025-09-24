@@ -36,3 +36,12 @@ export interface navItems {
     link: string,
     icon?: React.ReactElement | string
 }
+export interface moreInfoQuestionChildren {
+    title: string,
+    answer: string
+}
+export interface moreInfoQuestionHeaders {
+    mainHeading: string,
+    info: Array<moreInfoQuestionChildren>,
+    icon?: React.ReactNode | string
+}

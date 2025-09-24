@@ -1,23 +1,12 @@
 'use client';
 import React from "react";
-import { Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Avatar, Box, Button, Card, CardContent, Container, FormControl, Grid, InputLabel, MenuItem, Select, Stack, Theme, Typography, useTheme } from "@mui/material";
+import { moreInfoQuestions } from "@/data/moreInfo";
+import { ArrowDownwardOutlined } from "@mui/icons-material";
+import { before } from "node:test";
 
 
 export default function MoreInfo() {
-  const servicesOfferedQuestions: Array<string> = [];
-  const typicallyWorkWithQuestions: Array<string> = [];
-  const buildConstraintsQuestions: Array<string> = [];
-  const websiteOptimizedQuestions: Array<string> = [];
-  const somethingUniqueQuestions: Array<string> = [];
-  const offerCommerceQuestions: Array<string> = [];
-  const alreadyHaveDesignQuestions: Array<string> = [];
-  const howMuchCostQuestions: Array<string> = [];
-  const willUpdatesBeFreeQuestions: Array<string> = [];
-  const offerDiscountQuestions: Array<string> = [];
-  const refundQuestions: Array<string> = [];
-  const projectDurationsQuestions: Array<string> = [];
-  const whatHappensAfterLaunchQuestions: Array<string> = [];
-  const requestChangeQuestions: Array<string> = [];
   const theme: Theme = useTheme();
 
   return (
@@ -30,12 +19,43 @@ export default function MoreInfo() {
           <Typography textAlign={"center"} variant="body2" fontWeight={"bold"} marginTop={4}>
             Can't find what you need? Our FAQs have more details
           </Typography>
-          <Grid container spacing={2} marginTop={5}>
-            <Grid item xs={12 / 1} md={12 / 1} lg={12 / 2}>
-              <Typography fontWeight={"bold"} marginBottom={2}>
-                General Questions
-              </Typography>
-            </Grid>
+          <Grid container spacing={8} paddingTop = {theme.spacing(8)}>
+            {moreInfoQuestions.map((question, index) => {
+              return (
+
+                <Grid key = {question.mainHeading} item xs={12 / 1} md={12 / 1} lg={12 / 2}>
+                  <Typography variant = "h5" fontWeight={"bold"} marginBottom={2}>
+                    {question.icon} {question.mainHeading}
+                  </Typography>
+                  {question.info.map((subQuestions, index) => {
+                    return (
+                      <Accordion key = {subQuestions.title} 
+                        sx = {{
+                          paddingBlock: theme.spacing(2), 
+                          marginBottom: theme.spacing(2),
+                          border: `1px solid ${theme.palette.divider}`,
+                          boxShadow: "none",
+                        }}
+                      >
+                        <AccordionSummary
+                          expandIcon={<ArrowDownwardOutlined />}
+                          aria-controls="panel1-content"
+                          id="panel1-header"
+                        >
+                          <Typography variant = "body1" component="span">{subQuestions.title}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography variant="body2" textAlign={"justify"} lineHeight={1.3}>
+                            {subQuestions.answer}
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>                
+                    )
+                  })}
+                </Grid>
+
+              )
+            })}
           </Grid>
         </Container>
       </Box>

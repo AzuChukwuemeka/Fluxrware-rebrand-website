@@ -59,7 +59,7 @@ export default function WhoWeAre() {
                     <Typography variant="body1" fontWeight={"bold"}>
                       {staffData.name}
                     </Typography>
-                    <Typography variant="body2">
+                    <Typography variant="caption">
                       {staffData.position}
                     </Typography>
                   </Box>

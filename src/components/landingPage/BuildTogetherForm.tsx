@@ -60,7 +60,7 @@ export default function BuildForm() {
                 >
                     {projectTypes.map((projectType,index) => {
                         return (
-                            <MenuItem value={projectType.value}>{projectType.name}</MenuItem>
+                            <MenuItem key = {projectType.name} value={projectType.value}>{projectType.name}</MenuItem>
                         )
                     })}
                 </TextField>

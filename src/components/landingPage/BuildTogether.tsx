@@ -17,9 +17,10 @@ export default function BuildTogether() {
                     <Card variant="outlined" sx={{
                         padding: theme.spacing(5),
                         backgroundImage: "url(./blue-blob.png)",
-                        backgroundSize: "contain",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat"
+                        backgroundSize: "80% auto",
+                        backgroundPosition: "right",
+                        backgroundRepeat: "no-repeat",
+                        borderRadius: theme.spacing(10),
                     }}>
                         <CardContent>
                             <Typography variant="h4" fontWeight={"bold"}>
