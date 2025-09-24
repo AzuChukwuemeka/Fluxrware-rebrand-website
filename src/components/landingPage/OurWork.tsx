@@ -1,8 +1,8 @@
 'use client';
 import React from "react";
+import { FluxPictureText }  from "../global/fluxUI/FluxPictureText";
 import { Avatar, Box, Card, CardContent, Container, Grid, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
-import FluxPictureText from "../global/fluxUI/FluxPictureText";
 import { customerReviewsRowOne, customerReviewsRowThree, customerReviewsRowTwo } from "@/data/customerReviews";
 import { generateRandomColor } from "@/utils/helpers";
 

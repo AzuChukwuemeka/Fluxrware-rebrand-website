@@ -3,7 +3,7 @@ import React from "react";
 type picture = {
     children: any
 }
-export default function FluxPictureText(props: picture) {
+export function FluxPictureText(props: picture) {
     return (
         <Box display={"flex"} paddingBlock={1} alignItems={"center"}>
             {props.children}
