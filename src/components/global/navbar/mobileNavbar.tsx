@@ -52,7 +52,7 @@ export default function MobileNavbar() {
             </Link>
 
             {/* Menu Icon */}
-            <IconButton onClick={toggleDrawer} sx = {{paddingRight: theme.spacing(3)}}>
+            <IconButton onClick={toggleDrawer} sx = {{paddingRight: theme.spacing(2)}}>
               <MenuIcon/>
             </IconButton>
           </Stack>
