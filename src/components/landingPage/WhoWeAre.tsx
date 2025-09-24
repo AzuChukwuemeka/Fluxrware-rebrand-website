@@ -30,7 +30,7 @@ export default function WhoWeAre() {
               <Grid container spacing={theme.spacing(3)}>
                 {coFounders.map((founder, index) => {
                   return (
-                    <Grid key={founder.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 2}>
+                    <Grid key={founder.img} item xs={12 / 1} lg={12 / 2}>
                       <Box display={"flex"} flexDirection={"column"} alignItems={"center"} textAlign={"center"} gap={1}>
                         <Image alt={`Co-Founder: ${founder.name}`} src={founder.img} height={1000} width={1000} style = {{
                           height: "200px",
@@ -59,7 +59,7 @@ export default function WhoWeAre() {
           <Grid container spacing={theme.spacing(2)}>
             {restOfTheTeam.map((staffData, index) => {
               return (
-                <Grid key={staffData.img} item xs={12 / 1} sm={12 / 2} md={12 / 2} lg={12 / 8}>
+                <Grid key={staffData.img} item xs={12 / 1} md={12 / 2} lg={12/8}>
                   <Box display={"flex"} flexDirection={"column"} alignItems={"center"} textAlign={"center"} gap={1}>
                     <Image alt={`Fluxware Staff: ${staffData.name}`} src={staffData.img} width={1000} height={1000} style = {{
                       height: "200px",
