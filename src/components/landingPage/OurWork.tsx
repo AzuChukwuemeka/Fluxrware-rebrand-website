@@ -27,7 +27,7 @@ export default function OurWork() {
                   <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 3.5}>
                     <Card sx={{
                       border: "1.5px solid lightblue",
-                      borderRadius: theme.spacing(5),
+                      borderRadius: theme.spacing(3),
                     }}>
                       <CardContent>
                         <Box display={"flex"} paddingBlock={1} alignItems={"center"}>
@@ -58,7 +58,7 @@ export default function OurWork() {
                   <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 4}>
                     <Card sx={{
                       border: "1.5px solid lightblue",
-                      borderRadius: theme.spacing(5),
+                      borderRadius: theme.spacing(3),
                     }}>
                       <CardContent>
                         <Box display={"flex"} paddingBlock={1} alignItems={"center"}>
@@ -89,7 +89,7 @@ export default function OurWork() {
                   <Grid key={index} item xs={12 / 1} md={12 / 1} lg={12 / 3.5}>
                     <Card sx={{
                       border: "1.5px solid lightblue",
-                      borderRadius: theme.spacing(5),
+                      borderRadius: theme.spacing(3),
                     }}>
                       <CardContent>
                         <Box display={"flex"} paddingBlock={1} alignItems={"center"}>

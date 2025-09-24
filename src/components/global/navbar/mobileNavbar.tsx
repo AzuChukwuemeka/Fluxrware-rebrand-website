@@ -1,10 +1,9 @@
 'use client';
 
 import { navLinks } from "@/data/navItems";
-import { AppBar, Button, Container, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Stack, Theme, Toolbar, Typography, useTheme } from "@mui/material"
+import { AppBar, Container, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Stack, Theme, Toolbar, Typography, useTheme } from "@mui/material"
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
 import React, { useState } from "react"
 
 export default function MobileNavbar() {
@@ -30,13 +29,14 @@ export default function MobileNavbar() {
         position="static"
         sx={{
           background: "transparent",
+          borderColor: theme.palette.divider,
           borderRadius: theme.spacing(8),
           marginTop: theme.spacing(4),
           boxShadow: "none",
           border: "1px solid #aaa"
         }}
       >
-        <Toolbar disableGutters sx={{ paddingInline: 3 }}>
+        <Toolbar disableGutters sx={{ paddingInline: 3}}>
           <Stack
             direction={"row"}
             alignItems={"center"}
@@ -79,7 +79,7 @@ export default function MobileNavbar() {
             <ListItem key={value.link} disablePadding>
               <ListItemButton>
                 <Link href={value.link} style={{ display: "block", width: "100%" }}>
-                  <Typography variant="body1">
+                  <Typography variant="body1" textAlign={"center"}>
                     {value.name}
                   </Typography>
                 </Link>

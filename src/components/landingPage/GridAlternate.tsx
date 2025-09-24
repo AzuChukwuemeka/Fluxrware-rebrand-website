@@ -113,22 +113,13 @@ function SmallScreens(props: gridAlternateProp) {
                         {props.item.title}
                     </Typography>
                 </Box>
-                <Typography variant="body2" textAlign={"justify"} marginTop={theme.spacing(2)} lineHeight={theme.spacing(3)}>
+                <Typography variant="body2" textAlign={"justify"} lineHeight={theme.spacing(3)}>
                     {props.item.description}
                 </Typography>
             </Grid>
             <Grid item lg={1}>
                 <Box>
-                    <img
-                        src={props.item.img}
-                        // width = {1000}
-                        // height = {1000}
-                        style={{
-                            width: "100%",
-                            display: "block",
-                            margin: "auto"
-                        }}
-                    />
+                    <Image alt={props.item.img} width={1000} height={1000} src={props.item.img}/>
                 </Box>
             </Grid>
         </>

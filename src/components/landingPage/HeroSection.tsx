@@ -39,7 +39,7 @@ export default function HeroSection() {
                             <Avatar alt="User Served" src="./served2.jpg" sx={{ width: 24, height: 24 }} />
                             <Avatar alt="User Served" src="./served3.jpg" sx={{ width: 24, height: 24 }} />
                         </Stack>
-                        <Typography variant="body2" textAlign="center" letterSpacing={theme.spacing(.05)} fontWeight={500}>
+                        <Typography variant="caption" textAlign="center" letterSpacing={theme.spacing(.05)} fontWeight={500}>
                             Served over 200+ Happy Clients
                         </Typography>
                     </Box>
@@ -53,11 +53,11 @@ export default function HeroSection() {
                         </Typography>
                     </Box>
                     <Container
-                        maxWidth="xs"
+                        maxWidth="lg"
                         sx={{
                             display: "flex",
                             flexWrap: "wrap",
-                            padding: theme.spacing(.5),
+                            padding: theme.spacing(.3),
                             justifyContent: "center",
                         }}
                     >

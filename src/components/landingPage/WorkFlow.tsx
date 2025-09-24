@@ -49,7 +49,7 @@ export default function WorkFlow() {
                                         alt="Professional Illustration"
                                         style={{
                                             height: "500px",
-                                            borderRadius: theme.spacing(4),
+                                            borderRadius: theme.spacing(2),
                                             objectFit: "cover",
                                         }}
                                     />
@@ -57,10 +57,10 @@ export default function WorkFlow() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={12} md={7}>
-                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3), borderRadius: theme.spacing(5) }}>
+                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3)}}>
                                 <CardContent>
                                     <Grid container alignItems="flex-start">
-                                        <Grid item xs={3} sm={3} md={3} alignSelf="flex-start">
+                                        <Grid item xs={12} sm={12} md={3} alignSelf="flex-start" paddingBottom={theme.spacing(3)}>
                                             <img
                                                 src="./hand-pointing.png"
                                                 alt="Design Illustration"
@@ -73,9 +73,9 @@ export default function WorkFlow() {
                                                 }}
                                             />
                                         </Grid>
-                                        <Grid item xs={9} sm={9} md={9} alignSelf="flex-start">
+                                        <Grid item xs={12} sm={12} md={9} alignSelf="flex-start">
                                             <Box display={"flex"} alignItems={"center"}>
-                                                <img src="./pen.png" style={{ marginRight: theme.spacing(3) }} />
+                                                <img src="./pen.png" style={{ marginRight: theme.spacing(3) }}/>
                                                 <Typography variant="h4" flexGrow={1} fontWeight={"bold"}>
                                                     Design & Strategy
                                                 </Typography>

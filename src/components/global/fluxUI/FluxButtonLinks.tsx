@@ -13,8 +13,8 @@ export default function FluxwareButton(props: fluxwareButton) {
                 variant={props.variant}
                 sx={{
                     borderRadius: buttonBorderRadius,
-                    paddingInline: theme.spacing(6),
-                    marginInline: theme.spacing(1)
+                    paddingInline: theme.spacing(3.5),
+                    marginInline: theme.spacing(.5)
                 }}
             >
                 {props.children}

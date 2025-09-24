@@ -20,7 +20,7 @@ export default function BuildTogether() {
                         backgroundSize: "80% auto",
                         backgroundPosition: "right",
                         backgroundRepeat: "no-repeat",
-                        borderRadius: theme.spacing(10),
+                        borderRadius: theme.spacing(2),
                     }}>
                         <CardContent>
                             <Typography variant="h4" fontWeight={"bold"}>
