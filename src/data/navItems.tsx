@@ -1,6 +1,4 @@
 import { navItems } from "@/types/types";
-import React from "react";
-import HomeIcon from "@mui/icons-material";
 
 export const navLinks : Array<navItems> = [
     {

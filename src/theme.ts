@@ -1,5 +1,4 @@
 'use client';
-import { BorderColor } from '@mui/icons-material';
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 let theme = createTheme({
