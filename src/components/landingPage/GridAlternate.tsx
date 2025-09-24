@@ -3,7 +3,6 @@ import { productOffered } from "@/types/types";
 import { Avatar, Box, Grid, Theme, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 import Image from "next/image";
-import { FluxPictureText } from "../global/fluxUI/FluxPictureText";
 
 interface gridAlternateProp {
     item: productOffered,
@@ -40,12 +39,12 @@ function Normal(props: gridAlternateProp) {
     return (
         <>
             <Grid item xs={12 / 1} md={6}>
-                <FluxPictureText>
+                <Box display={"flex"} paddingBlock={1} alignItems={"center"}>
                     <Image alt={props.item.smallImg} width={50} height={50} src={props.item.smallImg} style={{ marginRight: theme.spacing(2) }} />
                     <Typography variant="h5" textAlign={"justify"} fontWeight={"bold"} >
                         {props.item.title}
                     </Typography>
-                </FluxPictureText>
+                </Box>
                 <Typography variant="body2" textAlign={"justify"} marginTop={theme.spacing(2)} lineHeight={theme.spacing(3)}>
                     {props.item.description}
                 </Typography>
@@ -89,12 +88,12 @@ function Alternate(props: gridAlternateProp) {
                 </Box>
             </Grid>
             <Grid item xs={12 / 1} md={6}>
-                <FluxPictureText>
+                <Box display={"flex"} paddingBlock={1} alignItems={"center"}>
                     <Image alt={props.item.smallImg} width={50} height={50} src={props.item.smallImg} style={{ marginRight: theme.spacing(2) }} />
                     <Typography variant="h5" textAlign={"justify"} fontWeight={"bold"}>
                         {props.item.title}
                     </Typography>
-                </FluxPictureText>
+                </Box>
                 <Typography variant="body2" textAlign={"justify"} marginTop={theme.spacing(2)} lineHeight={theme.spacing(3)}>
                     {props.item.description}
                 </Typography>
@@ -108,12 +107,12 @@ function SmallScreens(props: gridAlternateProp) {
     return (
         <>
             <Grid item lg={1}>
-                <FluxPictureText>
+                <Box display={"flex"} paddingBlock={1} alignItems={"center"}>
                     <Image alt={props.item.smallImg} width={50} height={50} src={props.item.smallImg} style={{ marginRight: theme.spacing(2) }} />
                     <Typography variant="h5" fontWeight={"bold"}>
                         {props.item.title}
                     </Typography>
-                </FluxPictureText>
+                </Box>
                 <Typography variant="body2" textAlign={"justify"} marginTop={theme.spacing(2)} lineHeight={theme.spacing(3)}>
                     {props.item.description}
                 </Typography>
