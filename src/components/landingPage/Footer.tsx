@@ -41,7 +41,7 @@ export default function Footer() {
                         <Typography variant="caption" color = {theme.palette.primary.main}>&copy; 2025</Typography>
                     </Box>
                 </Stack>
-                <Typography fontSize={"12vw"} whiteSpace={"no-wrap"} sx={{
+                <Typography fontSize={"13vw"} variant = "body2" whiteSpace={"no-wrap"} sx={{
                     background: "linear-gradient(90deg, lightblue, blue)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",

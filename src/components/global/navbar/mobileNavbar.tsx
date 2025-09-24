@@ -29,14 +29,13 @@ export default function MobileNavbar() {
         position="static"
         sx={{
           background: "transparent",
-          borderColor: theme.palette.divider,
           borderRadius: theme.spacing(8),
           marginTop: theme.spacing(4),
           boxShadow: "none",
-          border: "1px solid #aaa"
+          border: `1px solid ${theme.palette.common.black}`,
         }}
       >
-        <Toolbar disableGutters sx={{ paddingInline: 3}}>
+        <Toolbar disableGutters>
           <Stack
             direction={"row"}
             alignItems={"center"}
@@ -53,8 +52,8 @@ export default function MobileNavbar() {
             </Link>
 
             {/* Menu Icon */}
-            <IconButton edge="end" onClick={toggleDrawer}>
-              <MenuIcon />
+            <IconButton onClick={toggleDrawer} sx = {{paddingRight: theme.spacing(3)}}>
+              <MenuIcon/>
             </IconButton>
           </Stack>
         </Toolbar>
