@@ -14,7 +14,8 @@ export default function BuildForm() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Do things with this later
+        // Add validation here if needed
+        // For now, just toasting add that later
         toast.success("We will get back to you!")
     }
     const handleNameInputOnChangeEvent = (e: React.ChangeEvent<HTMLInputElement>) => {

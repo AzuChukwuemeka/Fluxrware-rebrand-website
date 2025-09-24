@@ -1,7 +1,6 @@
 'use client';
-import { Avatar, Box, Container, Grid, Typography, useTheme } from "@mui/material";
+import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
-import FluxPictureText from "../global/fluxUI/FluxPictureText";
 import { whatWeOffer } from "@/data/whatWeOffer";
 import GridAlternate from "./GridAlternate";
 

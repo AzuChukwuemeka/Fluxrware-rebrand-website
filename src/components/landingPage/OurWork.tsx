@@ -20,6 +20,8 @@ export default function OurWork() {
             Their words, their success, our shared story
           </Typography>
           <Box>
+            {/* USING DIFFERENT GRID ROWS TO ACHIEVE A MORE DYNAMIC LAYOUT */}
+            {/* ROW ONE */}
             <Grid container spacing={2} justifyContent={"center"} paddingBottom={2}>
               {customerReviewsRowOne.map((customerReview, index) => {
                 return (
@@ -50,6 +52,7 @@ export default function OurWork() {
               })}
             </Grid>
 
+            {/* ROW TWO */}   
             <Grid container spacing={2} justifyContent={"center"} paddingBottom={2}>
               {customerReviewsRowTwo.map((customerReview, index) => {
                 return (
@@ -80,6 +83,7 @@ export default function OurWork() {
               })}
             </Grid>
 
+            {/* ROW THREE */}
             <Grid container spacing={2} justifyContent={"center"} paddingBottom={2}>
               {customerReviewsRowThree.map((customerReview, index) => {
                 return (
