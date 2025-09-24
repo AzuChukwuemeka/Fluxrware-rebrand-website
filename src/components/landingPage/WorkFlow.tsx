@@ -33,13 +33,13 @@ export default function WorkFlow() {
                                     <ArrowForwardIcon fontSize="large" />
                                 </CardContent>
                                 <CardContent>
-                                    <Typography variant="body1" paddingBottom={theme.spacing(2)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Defining Your Vision:</b> We define your vision and goals to lay the foundation for success.
                                     </Typography>
-                                    <Typography variant="body1" paddingBlock={theme.spacing(2)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Blueprint:</b> We map out a perfect solution and detailed plan for your project.
                                     </Typography>
-                                    <Typography variant="body1" paddingBlock={theme.spacing(2)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Align and Plan:</b> We align our expertise with your business goals to craft a clear roadmap.
                                     </Typography>
                                 </CardContent>
