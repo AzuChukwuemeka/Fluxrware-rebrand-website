@@ -14,7 +14,7 @@ export default function WhoWeAre() {
           <Typography variant="h2" textAlign={"center"} fontWeight={"bold"}>
             Who We <span style={{ color: theme.palette.primary.main }}>Are</span>
           </Typography>
-          <Typography variant="body2" textAlign={"center"} paddingTop={theme.spacing(2)} fontWeight={"bold"}>
+          <Typography variant="body2" textAlign={"center"} paddingTop={theme.spacing(2)}>
             More than just code, it&apos;s about the people behind the projects
           </Typography>
           <Grid container marginTop={theme.spacing(3)} spacing={theme.spacing(7)}>
