@@ -19,7 +19,7 @@ export default function WorkFlow() {
                     <Typography variant="h3" paddingTop={theme.spacing(10)} textAlign={"center"} fontWeight={"bold"}>
                         <span style={{ color: theme.palette.primary.main }}>Your</span> Website, Our <span style={{ color: "grey" }}>Workflow</span>.
                     </Typography>
-                    <Typography variant="body2" paddingTop={theme.spacing(3)} marginBottom={theme.spacing(8)} textAlign={"center"} fontWeight={"bold"}>
+                    <Typography variant="body2" paddingTop={theme.spacing(3)} marginBottom={theme.spacing(8)} textAlign={"center"} >
                         A seamless process designed to bring your unique vision to life, on time and on budget.
                     </Typography>
                     <Grid container spacing={theme.spacing(4)}>
