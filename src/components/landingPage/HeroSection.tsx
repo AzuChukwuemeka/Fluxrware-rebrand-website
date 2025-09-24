@@ -48,7 +48,7 @@ export default function HeroSection() {
                         <Typography variant="h3" component="h2" letterSpacing={3} textAlign="center" fontWeight={"bold"}>
                             Let us <span style={{ color: theme.palette.primary.main }}>Design</span> and <span style={{ color: "grey" }}>Build</span> your <br /> next Website.
                         </Typography>
-                        <Typography variant="body1" textAlign="center" padding={theme.spacing(4)} letterSpacing={theme.spacing(.1)}>
+                        <Typography variant="body1" textAlign="center" padding={theme.spacing(4)}>
                             Elevating brands with custom, responsive web design and robust development
                         </Typography>
                     </Box>
