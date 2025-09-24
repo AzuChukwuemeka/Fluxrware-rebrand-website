@@ -3,7 +3,7 @@ import React from "react";
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { Box, Card, CardContent, Container, Grid,  Theme, Typography, useTheme } from "@mui/material";
+import { Box, Card, CardContent, Container, Grid, Theme, Typography, useTheme } from "@mui/material";
 
 
 export default function WorkFlow() {
@@ -57,7 +57,7 @@ export default function WorkFlow() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={12} md={7}>
-                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3)}}>
+                            <Card variant="outlined" sx={{ marginBottom: theme.spacing(3) }}>
                                 <CardContent>
                                     <Grid container alignItems="flex-start">
                                         <Grid item xs={12} sm={12} md={3} alignSelf="flex-start" paddingBottom={theme.spacing(3)}>
@@ -75,16 +75,16 @@ export default function WorkFlow() {
                                         </Grid>
                                         <Grid item xs={12} sm={12} md={9} alignSelf="flex-start">
                                             <Box display={"flex"} alignItems={"center"}>
-                                                <img src="./pen.png" style={{ marginRight: theme.spacing(3) }}/>
+                                                <img src="./pen.png" style={{ marginRight: theme.spacing(3) }} />
                                                 <Typography variant="h4" flexGrow={1} fontWeight={"bold"}>
                                                     Design & Strategy
                                                 </Typography>
                                                 <ArrowDownwardIcon fontSize="large" />
                                             </Box>
-                                            <Typography variant="body1" paddingBlock={theme.spacing(2)}>
+                                            <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                                 <b>Crafting The Experience:</b> We translate strategy into a user-centric design that captivates your audience.
                                             </Typography>
-                                            <Typography variant="body1" paddingBlock={theme.spacing(2)}>
+                                            <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                                 <b>UI/UX & Branding:</b> We translate strategy into a user-centric design that captivates your audience.
                                             </Typography>
                                         </Grid>
@@ -103,13 +103,13 @@ export default function WorkFlow() {
                                         </Typography>
                                         <ArrowDownwardIcon fontSize="large" />
                                     </Box>
-                                    <Typography variant="body1" paddingBlock={theme.spacing(1.5)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Precision Development:</b> We build fast, responsive and secure websites with modern code.
                                     </Typography>
-                                    <Typography variant="body1" paddingBlock={theme.spacing(1.5)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Engineering for Performance:</b> We engineer every detail for speed, responsiveness and reliability
                                     </Typography>
-                                    <Typography variant="body1" paddingBlock={theme.spacing(1.5)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Code & Display:</b> We transform designs into flawless websites with a seamless launch.
                                     </Typography>
                                 </CardContent>
@@ -131,13 +131,13 @@ export default function WorkFlow() {
                                         </Typography>
                                         <ArrowDownwardIcon fontSize="large" />
                                     </Box>
-                                    <Typography variant="body1" paddingBlock={theme.spacing(2)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Ongoing partnership:</b> We provide continuous support and optimization to keep your website at it&apos;s best.
                                     </Typography>
-                                    <Typography variant="body1" paddingBlock={theme.spacing(2)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Evolving for the Future:</b> We offer strategic guidance to help you adapt, scale and stay ahead of the competition.
                                     </Typography>
-                                    <Typography variant="body1" paddingBlock={theme.spacing(2)}>
+                                    <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>
                                         <b>Maintenance & Optimization:</b> We provide dedicated support to keep your site running smoothly and help it grow.
                                     </Typography>
                                 </CardContent>
