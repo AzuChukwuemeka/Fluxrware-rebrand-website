@@ -1,9 +1,8 @@
 'use client';
-import { useTheme } from "@emotion/react";
-import { Box, useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material";
+import { Box, Theme, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import { Theme } from "@mui/material/styles";
 
 export default function LogoBuild() {
     const theme : Theme = useTheme();
