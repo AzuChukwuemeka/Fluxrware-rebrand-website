@@ -16,9 +16,6 @@ export default function HeroSection() {
     const captionRef = useRef<HTMLDivElement | null>(null);
 
     useGSAP(() => {
-        gsap.set(servedRef.current, { y: 10, autoAlpha: 0 });
-        gsap.set(titleRef.current, { autoAlpha: 0 });
-        gsap.set(captionRef.current, { autoAlpha: 0 })
         gsap.fromTo(servedRef.current,
             {
                 y: 10,
@@ -93,7 +90,7 @@ export default function HeroSection() {
                         <Typography ref={captionRef} variant="body1" textAlign="center" padding={theme.spacing(4)}>
                             Elevating brands with custom, responsive web design and robust development
                         </Typography>
-                        <LogoBuild />
+                        {/* <LogoBuild /> */}
                     </Box>
                     <Container
                         maxWidth="lg"
