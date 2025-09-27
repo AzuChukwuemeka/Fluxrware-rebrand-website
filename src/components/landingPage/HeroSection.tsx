@@ -19,7 +19,7 @@ export default function HeroSection() {
         const titleSplit = new SplitText(titleRef.current, { type: 'chars, words, lines' });
         const captionSplit  = new SplitText(captionRef.current, { type: 'lines' });
         gsap.from(servedRef.current,{
-            y: 10, 
+            yPercent: 100, 
             autoAlpha: 0, 
             duration: 1, 
             ease: 'power1.out',
