@@ -18,7 +18,13 @@ export default function HeroSection() {
     useGSAP(() => {
         const titleSplit = new SplitText(titleRef.current, { type: 'chars, words, lines' });
         const captionSplit  = new SplitText(captionRef.current, { type: 'lines' });
-        gsap.from(servedRef.current,{y: 10, autoAlpha: 0, duration: 1, ease: 'power1.out'});
+        gsap.from(servedRef.current,{
+            y: 10, 
+            autoAlpha: 0, 
+            duration: 1, 
+            ease: 'power1.out',
+            animationDelay: 1
+        });
 
         gsap.from(titleSplit.chars,
             {
@@ -33,9 +39,9 @@ export default function HeroSection() {
             {
                 yPercent: 100,
                 opacity: 0,
-                duration: .6,
-                stagger: 0.1,
-                delay: .2,
+                duration: 1,
+                stagger: 0.4,
+                delay: .5,
                 ease: 'expo.inOut',
             }
         )
