@@ -18,7 +18,7 @@ export const viewport = {
   initialScale: 1,
 }
 
-export default function RootLayout(props: Readonly<{ children: React.ReactNode;}>) {
+export default function RootLayout(props: Readonly<{ children: React.ReactNode;}>) {  
   return (
       <html lang="en" className={poppins.variable}>
         <body>

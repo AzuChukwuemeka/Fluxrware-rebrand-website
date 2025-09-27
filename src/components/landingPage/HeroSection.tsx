@@ -1,13 +1,49 @@
 'use client';
-import React from "react";
+import React, { useRef } from "react";
 import { Avatar, Box, Container, Stack, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 import Navbar from "../global/navbar/navbar";
 import FluxwareButton from "../global/fluxUI/FluxButtonLinks";
-
+import LogoBuild from "./LogoBuild";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
 
 export default function HeroSection() {
     const theme: Theme = useTheme();
+    const servedRef = useRef<HTMLDivElement | null>(null);
+    const titleRef = useRef<HTMLDivElement | null>(null);
+    const captionRef = useRef<HTMLDivElement | null>(null);
+
+    useGSAP(() => {
+        gsap.set(servedRef.current, { y: 10, autoAlpha: 0 });
+        gsap.set(titleRef.current, { autoAlpha: 0 });
+        gsap.set(captionRef.current, { autoAlpha: 0 })
+        gsap.fromTo(servedRef.current,
+            {
+                y: 10,
+                autoAlpha: 0,
+            },
+            {
+                y: 0,
+                autoAlpha: 1,
+                animationDelay: 0,
+                duration: 1,
+                ease: 'back.inOut'
+            }
+        );
+        const titleSplit = new SplitText(titleRef.current, { type: 'chars, words, lines' });
+        gsap.from(titleSplit.chars,
+            {
+                yPercent: 100,
+                opacity: 0,
+                duration: 1,
+                ease: 'expo.inOut',
+                stagger: 0.04
+            }
+        )
+    }, []);
+
     return (
         <React.Fragment>
             <Box
@@ -21,6 +57,7 @@ export default function HeroSection() {
                 <Container maxWidth="lg">
                     <Navbar />
                     <Box
+                        ref={servedRef}
                         marginTop={theme.spacing(9)}
                         paddingBlock={theme.spacing(.5)}
                         paddingInline={theme.spacing(3)}
@@ -31,7 +68,7 @@ export default function HeroSection() {
                         justifySelf={"center"}
                         alignItems={"center"}
                         sx={{
-                            backgroundColor: 'rgba(128, 98, 128, 0.04)', // semi-transparent grey   
+                            backgroundColor: 'rgba(128, 98, 128, 0.04)'
                         }}
                     >
                         <Stack direction="row" marginRight={1}>
@@ -44,13 +81,19 @@ export default function HeroSection() {
                         </Typography>
                     </Box>
 
-                    <Box marginTop={theme.spacing(7)}>
-                        <Typography variant="h3" component="h2" letterSpacing={3} textAlign="center" fontWeight={"bold"}>
+                    <Box
+                        marginTop={theme.spacing(7)}
+                        sx={{
+                            position: "relative"
+                        }}
+                    >
+                        <Typography ref={titleRef} variant="h3" component="h2" letterSpacing={3} textAlign="center" fontWeight={"bold"}>
                             Let us <span style={{ color: theme.palette.primary.main }}>Design</span> and <span style={{ color: "grey" }}>Build</span> your <br /> next Website.
                         </Typography>
-                        <Typography variant="body1" textAlign="center" padding={theme.spacing(4)}>
+                        <Typography ref={captionRef} variant="body1" textAlign="center" padding={theme.spacing(4)}>
                             Elevating brands with custom, responsive web design and robust development
                         </Typography>
+                        <LogoBuild />
                     </Box>
                     <Container
                         maxWidth="lg"

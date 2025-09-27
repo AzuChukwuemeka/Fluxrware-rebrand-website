@@ -3,11 +3,12 @@ import React from "react";
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { Box, Card, CardContent, Container, Grid, Theme, Typography, useTheme } from "@mui/material";
+import { Box, Card, CardContent, Container, Grid, Theme, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 
 export default function WorkFlow() {
     const theme: Theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <React.Fragment>
             <Box
@@ -34,7 +35,8 @@ export default function WorkFlow() {
                                     <Typography variant="h4" flexGrow={1} fontWeight={"bold"}>
                                         Discovery
                                     </Typography>
-                                    <ArrowForwardIcon fontSize="large" />
+                                    {!isMobile ? <ArrowForwardIcon fontSize="large" /> : <ArrowDownwardIcon fontSize="large" />}
+                                    
                                 </CardContent>
                                 <CardContent>
                                     <Typography variant="body2" paddingBlock={theme.spacing(2)} textAlign={"justify"}>

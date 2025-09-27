@@ -1,14 +1,9 @@
 import { moreInfoQuestionHeaders } from "@/types/types";
-import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import PriceChangeIcon from '@mui/icons-material/PriceChange';
-import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-
 
 export const moreInfoQuestions: Array<moreInfoQuestionHeaders> = [
     {
-        mainHeading: "General Questions",
-        icon: <EmojiObjectsIcon style={{ color: "#f5c518" }} />,
+        mainHeading: "💡 General Questions",
+        icon: "",
         info: [
             {
                 title: "What services does Fluxware offer?",
@@ -25,8 +20,8 @@ export const moreInfoQuestions: Array<moreInfoQuestionHeaders> = [
         ]
     },
     {
-        mainHeading: "Design & Development",
-        icon: <ConstructionIcon style={{ color: "gray" }} />,
+        mainHeading: "🛠️ Design & Development",
+        icon: "",
         info: [
             {
                 title: "Will my website be optimized for mobile?",
@@ -47,8 +42,8 @@ export const moreInfoQuestions: Array<moreInfoQuestionHeaders> = [
         ]
     },
     {
-        mainHeading: "Pricing, Discounts & Refunds",
-        icon: <PriceChangeIcon style={{ color: "green" }} />,
+        mainHeading: "💰 Pricing, Discounts & Refunds",
+        icon: "",
         info: [
             {
                 title: "How much will it cost?",
@@ -69,8 +64,8 @@ export const moreInfoQuestions: Array<moreInfoQuestionHeaders> = [
         ]
     },
     {
-        mainHeading: "Timelines & Support",
-        icon: <CalendarTodayIcon style={{ color: "blue" }} />,
+        mainHeading: "📅 Timelines & Support",
+        icon: "",
         info: [
             {
                 title: "How long will my project take?",
