@@ -22,9 +22,9 @@ export default function OurWork() {
       opacity: 1,
       xPercent: 0,
       scrollTrigger: {
-        trigger: topElementRef.current,
-        start: "top 80%",
-        end: "bottom 90%",
+        trigger: rowOneRef.current,
+        start: "top bottom",
+        end: "top 80%",
         toggleActions: "play none none reverse",
         scrub: 1,
       }
@@ -34,8 +34,8 @@ export default function OurWork() {
       xPercent: 0,
       scrollTrigger: {
         trigger: rowTwoRef.current,
-        start: "top 80%",
-        end: "bottom 90%",
+        start: "top bottom",
+        end: "top 80%",
         toggleActions: "play none none reverse",
         scrub: 1,
       }
@@ -45,8 +45,8 @@ export default function OurWork() {
       xPercent: 0,
       scrollTrigger: {
         trigger: rowThreeRef.current,
-        start: "top 80%",
-        end: "bottom 90%",
+        start: "top bottom",
+        end: "top 80%",
         toggleActions: "play none none reverse",
         scrub: 1,
       }
