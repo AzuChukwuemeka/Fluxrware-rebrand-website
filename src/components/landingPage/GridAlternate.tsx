@@ -208,7 +208,7 @@ function SmallScreens(props: gridAlternateProp) {
             scrollTrigger: {
                 trigger: offerRef.current,
                 start: "top bottom",
-                end: "bottom 70%",
+                end: "bottom 90%",
                 scrub: true
             }
         });
@@ -218,7 +218,7 @@ function SmallScreens(props: gridAlternateProp) {
             scrollTrigger: {
                 trigger: offerRef.current,
                 start: "top bottom",
-                end: "bottom 70%",
+                end: "bottom 90%",
                 scrub: true
             }
         });

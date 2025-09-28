@@ -25,7 +25,7 @@ export default function WhatWeOffer() {
       ease: "expo.inOut",
       scrollTrigger: {
         trigger: offerTitleRef.current,
-        start: "top bottom",
+        start: "top 95%",
         end: "bottom 90%",
         scrub: 1,
         toggleActions: "play none none reverse",
