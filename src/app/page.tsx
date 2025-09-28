@@ -19,7 +19,7 @@ export default function Home() {
       <WorkFlow />
       <WhatWeOffer />
       <ProjectTier />
-      <OurWork />
+      {/* <OurWork /> */}
       <WhoWeAre />
       <MoreInfo />
       <BuildTogether />

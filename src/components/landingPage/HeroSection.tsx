@@ -1,13 +1,12 @@
 'use client';
-import React, { useRef } from "react";
+import { useGSAP } from "@gsap/react";
 import { Avatar, Box, Container, Stack, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
-import Navbar from "../global/navbar/navbar";
-import FluxwareButton from "../global/fluxUI/FluxButtonLinks";
-import LogoBuild from "./LogoBuild";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
+import React, { useRef } from "react";
+import FluxwareButton from "../global/fluxUI/FluxButtonLinks";
+import Navbar from "../global/navbar/navbar";
 
 export default function HeroSection() {
     const theme: Theme = useTheme();
@@ -16,35 +15,56 @@ export default function HeroSection() {
     const captionRef = useRef<HTMLDivElement | null>(null);
 
     useGSAP(() => {
+        const timeline = gsap.timeline({
+            defaults: {
+                duration: 1,
+                ease: "power1.out"
+            }
+        })
         const titleSplit = new SplitText(titleRef.current, { type: 'chars, words, lines' });
-        const captionSplit  = new SplitText(captionRef.current, { type: 'lines' });
-        gsap.from(servedRef.current,{
-            yPercent: 100, 
-            autoAlpha: 0, 
-            duration: 1, 
+        const captionSplit = new SplitText(captionRef.current, { type: 'lines' });
+        gsap.set(servedRef.current, {
+            yPercent: 100,
+            opacity: 0,
+            visibility: "visible"
+        })
+        gsap.set(titleSplit.chars, {
+            yPercent: 100,
+            opacity: 0,
+            visibility: "visible"
+        })
+        gsap.set(captionSplit.lines, {
+            yPercent: 100,
+            opacity: 0,
+        })
+        timeline.to(servedRef.current, {
+            yPercent: 0,
+            opacity: 1,
             ease: 'power1.out',
-            animationDelay: 1
+            animationDelay: 1,
+            immediateRender: false
         });
 
-        gsap.from(titleSplit.chars,
+        timeline.to(titleSplit.chars,
             {
-                yPercent: 100,
-                opacity: 0,
+                yPercent: 0,
+                opacity: 1,
                 duration: .6,
                 ease: 'expo.inOut',
                 stagger: 0.04
             }
         )
-        gsap.from(captionSplit.lines,
+        timeline.to(captionSplit.lines,
             {
-                yPercent: 100,
-                opacity: 0,
+                yPercent: 0,
+                opacity: 1,
                 duration: 1,
                 stagger: 0.4,
                 delay: .5,
                 ease: 'expo.inOut',
             }
         )
+        timeline.play();
     }, []);
 
     return (
@@ -71,7 +91,8 @@ export default function HeroSection() {
                         justifySelf={"center"}
                         alignItems={"center"}
                         sx={{
-                            backgroundColor: 'rgba(128, 98, 128, 0.04)'
+                            backgroundColor: 'rgba(128, 98, 128, 0.04)',
+                            visibility: "hidden"
                         }}
                     >
                         <Stack direction="row" marginRight={1}>
@@ -79,7 +100,12 @@ export default function HeroSection() {
                             <Avatar alt="User Served" src="./served2.jpg" sx={{ width: 24, height: 24 }} />
                             <Avatar alt="User Served" src="./served3.jpg" sx={{ width: 24, height: 24 }} />
                         </Stack>
-                        <Typography variant="caption" textAlign="center" letterSpacing={theme.spacing(.05)} fontWeight={500}>
+                        <Typography 
+                            variant="caption" 
+                            textAlign="center" 
+                            letterSpacing={theme.spacing(.05)} 
+                            fontWeight={500}
+                        >
                             Served over 200+ Happy Clients
                         </Typography>
                     </Box>
@@ -90,7 +116,16 @@ export default function HeroSection() {
                             position: "relative"
                         }}
                     >
-                        <Typography ref={titleRef} variant="h3" component="h2" letterSpacing={3} textAlign="center" fontWeight={"bold"}>
+                        <Typography 
+                            ref={titleRef} 
+                            variant="h3" 
+                            letterSpacing={3} 
+                            textAlign="center" 
+                            fontWeight={"bold"}
+                            sx = {{
+                                visibility: "hidden"
+                            }}
+                        >
                             Let us <span style={{ color: theme.palette.primary.main }}>Design</span> and <span style={{ color: "grey" }}>Build</span> your <br /> next Website.
                         </Typography>
                         <Typography ref={captionRef} variant="body1" textAlign="center" padding={theme.spacing(4)}>
