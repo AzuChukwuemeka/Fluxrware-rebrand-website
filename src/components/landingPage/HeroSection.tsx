@@ -36,6 +36,7 @@ export default function HeroSection() {
         gsap.set(captionSplit.lines, {
             yPercent: 100,
             opacity: 0,
+            visibility: "visible"
         })
         timeline.to(servedRef.current, {
             yPercent: 0,
@@ -128,7 +129,15 @@ export default function HeroSection() {
                         >
                             Let us <span style={{ color: theme.palette.primary.main }}>Design</span> and <span style={{ color: "grey" }}>Build</span> your <br /> next Website.
                         </Typography>
-                        <Typography ref={captionRef} variant="body1" textAlign="center" padding={theme.spacing(4)}>
+                        <Typography 
+                            ref={captionRef} 
+                            variant="body1" 
+                            textAlign="center" 
+                            padding={theme.spacing(4)}
+                            sx = {{
+                                visibility: "hidden"
+                            }}
+                        >
                             Elevating brands with custom, responsive web design and robust development
                         </Typography>
                         {/* <LogoBuild /> */}
