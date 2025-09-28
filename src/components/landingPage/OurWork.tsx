@@ -15,18 +15,17 @@ export default function OurWork() {
   const rowTwoRef = useRef<HTMLDivElement | null>(null);
   const rowThreeRef = useRef<HTMLDivElement | null>(null);
   useGSAP(() => {
-    gsap.set(rowOneRef.current, { visibility: "visible", xPercent: -50, opacity: 0 })
-    gsap.set(rowTwoRef.current, { visibility: "visible", xPercent: 50, opacity: 0 })
-    gsap.set(rowThreeRef.current, { visibility: "visible", xPercent: -50, opacity: 0 })
+    gsap.set(rowOneRef.current, { visibility: "visible", xPercent: -20, opacity: 0 })
+    gsap.set(rowTwoRef.current, { visibility: "visible", xPercent: 20, opacity: 0 })
+    gsap.set(rowThreeRef.current, { visibility: "visible", xPercent: -20, opacity: 0 })
     gsap.to(rowOneRef.current, {
       opacity: 1,
       xPercent: 0,
       scrollTrigger: {
         trigger: rowOneRef.current,
         start: "top bottom",
-        end: "top 80%",
+        end: "top 95%",
         toggleActions: "play none none reverse",
-        scrub: 1,
       }
     })
     gsap.to(rowTwoRef.current, {
@@ -35,7 +34,7 @@ export default function OurWork() {
       scrollTrigger: {
         trigger: rowTwoRef.current,
         start: "top bottom",
-        end: "top 80%",
+        end: "top 95%",
         toggleActions: "play none none reverse",
         scrub: 1,
       }
@@ -46,7 +45,7 @@ export default function OurWork() {
       scrollTrigger: {
         trigger: rowThreeRef.current,
         start: "top bottom",
-        end: "top 80%",
+        end: "top 95%",
         toggleActions: "play none none reverse",
         scrub: 1,
       }
