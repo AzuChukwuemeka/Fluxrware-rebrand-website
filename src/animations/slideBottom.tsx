@@ -17,6 +17,11 @@ export const slideBottomToPropertiesWithStagger = {
     animationDelay: 1,
     stagger: 0.04
 }
+export const slideBottomDefaultState = {
+    yPercent: 100,
+    opacity: 0,
+    visibility: "visible"
+}
 export const slideBottomToPropertiesWithDelayAndStagger = (delay: number, stagger: number) => {
     return {
         yPercent: 0,

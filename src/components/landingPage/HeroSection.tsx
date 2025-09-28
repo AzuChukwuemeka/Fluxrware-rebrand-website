@@ -7,50 +7,39 @@ import { SplitText } from "gsap/all";
 import React, { useRef } from "react";
 import FluxwareButton from "../global/fluxUI/FluxButtonLinks";
 import Navbar from "../global/navbar/navbar";
+import { slideBottomDefaultState } from "@/animations/slideBottom";
 
 export default function HeroSection() {
     const theme: Theme = useTheme();
     const servedRef = useRef<HTMLDivElement | null>(null);
     const titleRef = useRef<HTMLDivElement | null>(null);
     const captionRef = useRef<HTMLDivElement | null>(null);
+    const buttonRef = useRef<HTMLDivElement | null>(null);
 
     useGSAP(() => {
         const timeline = gsap.timeline({
             defaults: {
-                duration: 1,
-                ease: "power1.out"
+                duration: .4,
+                ease: "expo.inOut",
             }
         })
         const titleSplit = new SplitText(titleRef.current, { type: 'chars, words, lines' });
         const captionSplit = new SplitText(captionRef.current, { type: 'lines' });
-        gsap.set(servedRef.current, {
-            yPercent: 100,
-            opacity: 0,
-            visibility: "visible"
-        })
-        gsap.set(titleSplit.chars, {
-            yPercent: 100,
-            opacity: 0,
-            visibility: "visible"
-        })
-        gsap.set(captionSplit.lines, {
-            yPercent: 100,
-            opacity: 0,
-        })
+        gsap.set(captionRef.current, slideBottomDefaultState)
+        gsap.set(buttonRef.current, slideBottomDefaultState)
+        gsap.set(servedRef.current, slideBottomDefaultState)
+        gsap.set(titleSplit.chars, slideBottomDefaultState)
+        gsap.set(captionSplit.lines, slideBottomDefaultState)
+
         timeline.to(servedRef.current, {
             yPercent: 0,
             opacity: 1,
-            ease: 'power1.out',
-            animationDelay: 1,
-            immediateRender: false
         });
-
         timeline.to(titleSplit.chars,
             {
                 yPercent: 0,
                 opacity: 1,
                 duration: .6,
-                ease: 'expo.inOut',
                 stagger: 0.04
             }
         )
@@ -58,10 +47,21 @@ export default function HeroSection() {
             {
                 yPercent: 0,
                 opacity: 1,
-                duration: 1,
                 stagger: 0.4,
-                delay: .5,
-                ease: 'expo.inOut',
+            }
+        )
+        timeline.to(captionRef.current,
+            {
+                yPercent: 0,
+                opacity: 1,
+                stagger: 0.4,
+            }
+        )
+        timeline.to(buttonRef.current,
+            {
+                yPercent: 0,
+                opacity: 1,
+                stagger: 0.4,
             }
         )
         timeline.play();
@@ -128,18 +128,28 @@ export default function HeroSection() {
                         >
                             Let us <span style={{ color: theme.palette.primary.main }}>Design</span> and <span style={{ color: "grey" }}>Build</span> your <br /> next Website.
                         </Typography>
-                        <Typography ref={captionRef} variant="body1" textAlign="center" padding={theme.spacing(4)}>
+                        <Typography 
+                            ref={captionRef} 
+                            variant="body1" 
+                            textAlign="center" 
+                            padding={theme.spacing(4)}
+                            sx = {{
+                                visibility: "hidden"
+                            }}
+                        >
                             Elevating brands with custom, responsive web design and robust development
                         </Typography>
                         {/* <LogoBuild /> */}
                     </Box>
                     <Container
                         maxWidth="lg"
+                        ref = {buttonRef}
                         sx={{
                             display: "flex",
                             flexWrap: "wrap",
                             padding: theme.spacing(.3),
                             justifyContent: "center",
+                            visibility: "hidden"
                         }}
                     >
                         {/* <FluxwareButton variant="outlined">Space for icons</FluxwareButton> */}

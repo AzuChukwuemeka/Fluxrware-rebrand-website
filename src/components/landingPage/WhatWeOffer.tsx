@@ -3,8 +3,12 @@ import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 import { whatWeOffer } from "@/data/whatWeOffer";
 import GridAlternate from "./GridAlternate";
+import { useGSAP } from "@gsap/react";
 
 export default function WhatWeOffer() {
+  useGSAP(() => {
+    
+  }, []);
   const theme: Theme = useTheme();
   return (
     <>
