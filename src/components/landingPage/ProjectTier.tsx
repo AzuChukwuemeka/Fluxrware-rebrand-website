@@ -32,14 +32,14 @@ export default function ProjectTier() {
                     <CardContent>
                       <Stack direction={"row"}>
                         <Box width={"100%"}>
-                          <Typography variant="body1">
+                          <Typography variant="body1" fontWeight={"bold"}>
                             {projectTier.tier}
                           </Typography>
                           <Typography variant="caption">
                             {projectTier.description}
                           </Typography>
                         </Box>
-                        <Typography variant="h4">
+                        <Typography variant="h4" fontWeight={"bold"}>
                           ${projectTier.price}
                         </Typography>
                       </Stack>

@@ -4,15 +4,15 @@ interface projectType {
 }
 export const projectTypes = [
     {
-        name: "test",
-        value: "random"
+        name: "Standard",
+        value: "standard"
     },
     {
-        name: "megatron",
-        value: "randomtron"
+        name: "Premium",
+        value: "premium"
     },
     {
-        name: "decepticons",
-        value: "whatever cons"
+        name: "Enterprise",
+        value: "enterprise"
     },
 ]

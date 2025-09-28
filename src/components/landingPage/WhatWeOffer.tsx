@@ -15,24 +15,20 @@ export default function WhatWeOffer() {
   const offerTitleRef = useRef<HTMLDivElement | null>(null);
 
   useGSAP(() => {
-    const timeline = gsap.timeline({
-      defaults: {
-        duration: 0.4,
-        ease: "expo.inOut",
-      }
-    });
-
     // Initial state
     gsap.set(offerTitleRef.current, slideBottomDefaultState);
 
     // Animate on scroll
-    timeline.to(offerTitleRef.current, {
+    gsap.to(offerTitleRef.current, {
       ...slideBottomToProperties,
+      duration: 1,
+      ease: "expo.inOut",
       scrollTrigger: {
         trigger: offerTitleRef.current,
         start: "top bottom",
         end: "bottom 90%",
-        scrub: true,
+        scrub: 1,
+        toggleActions: "play none none reverse",
       }
     });
 

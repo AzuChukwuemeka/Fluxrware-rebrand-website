@@ -12,7 +12,7 @@ export default function MoreInfo() {
     <React.Fragment>
       <Box paddingTop={10} style={{ background: "radial-gradient(circle at bottom left, #fefefe 90%, lightblue) 200% 200%" }}>
         <Container>
-          <Typography textAlign={"center"} variant="h3">
+          <Typography textAlign={"center"} variant="h2" fontWeight={"bold"}>
             Need a Little More <span style={{ color: theme.palette.primary.main }}>Info?</span>
           </Typography>
           <Typography textAlign={"center"} variant="body2" marginTop={4}>
