@@ -24,7 +24,7 @@ export default function OurWork() {
       scrollTrigger: {
         trigger: topElementRef.current,
         start: "top 80%",
-        end: "top 50%",
+        end: "bottom 90%",
         toggleActions: "play none none reverse",
         scrub: 1,
       }
@@ -35,7 +35,7 @@ export default function OurWork() {
       scrollTrigger: {
         trigger: rowTwoRef.current,
         start: "top 80%",
-        end: "top 50%",
+        end: "bottom 90%",
         toggleActions: "play none none reverse",
         scrub: 1,
       }
@@ -46,7 +46,7 @@ export default function OurWork() {
       scrollTrigger: {
         trigger: rowThreeRef.current,
         start: "top 80%",
-        end: "top 50%",
+        end: "bottom 90%",
         toggleActions: "play none none reverse",
         scrub: 1,
       }
@@ -57,7 +57,7 @@ export default function OurWork() {
   return (
     <React.Fragment>
       <Box paddingTop={theme.spacing(10)} style={{ background: "radial-gradient(circle at top right, #fefefe 95%, lightblue) 200% 200%" }}>
-        <Container ref={topElementRef}>
+        <Container ref={topElementRef} sx = {{overflowX: "hidden"}}>
           <Typography fontWeight={"bold"} variant="h3" textAlign={"center"}>
             Our <span style={{ color: theme.palette.primary.main }}>Work,</span> Through Their <span style={{ color: "grey" }}>Lens</span>
           </Typography>
@@ -74,7 +74,6 @@ export default function OurWork() {
               paddingBottom={2}
               sx={{ 
                 visibility: "hidden",
-                overflowX: "hidden"
               }}
               ref={rowOneRef}
             >
@@ -116,7 +115,6 @@ export default function OurWork() {
               ref = {rowTwoRef}
               sx={{ 
                 visibility: "hidden",
-                overflowX: "hidden"
               }}
             >
               {customerReviewsRowTwo.map((customerReview, index) => {
@@ -157,7 +155,6 @@ export default function OurWork() {
               ref = {rowThreeRef}
               sx={{ 
                 visibility: "hidden",
-                overflowX: "hidden"
               }}
             >
               {customerReviewsRowThree.map((customerReview, index) => {
