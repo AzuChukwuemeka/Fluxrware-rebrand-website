@@ -195,34 +195,6 @@ function Alternate(props: gridAlternateProp) {
 }
 
 function SmallScreens(props: gridAlternateProp) {
-    const offerRef = useRef<HTMLDivElement | null>(null);
-    const descRef = useRef<HTMLDivElement | null>(null);
-
-    useGSAP(() => {
-        const timeline = gsap.timeline({ defaults: { duration: .4 } })
-        gsap.set(offerRef.current, slideBottomDefaultState)
-        gsap.set(descRef.current, { visibility: "visible", xPercent: 40, opacity: 0 })
-
-        gsap.to(offerRef.current, {
-            ...slideBottomToProperties,
-            scrollTrigger: {
-                trigger: offerRef.current,
-                start: "top bottom",
-                end: "bottom 90%",
-                scrub: true
-            }
-        });
-        gsap.to(descRef.current, {
-            xPercent: 0,
-            opacity: 1,
-            scrollTrigger: {
-                trigger: offerRef.current,
-                start: "top bottom",
-                end: "bottom 90%",
-                scrub: true
-            }
-        });
-    }, []);
     const theme: Theme = useTheme();
     return (
         <>
@@ -232,7 +204,6 @@ function SmallScreens(props: gridAlternateProp) {
                     <Typography 
                         variant="h5" 
                         fontWeight={"bold"}
-                        ref = {offerRef}
                     >
                         {props.item.title}
                     </Typography>
@@ -241,7 +212,6 @@ function SmallScreens(props: gridAlternateProp) {
                     variant="body2" 
                     textAlign={"justify"} 
                     lineHeight={theme.spacing(3)}
-                    ref = {descRef}
                 >
                     {props.item.description}
                 </Typography>

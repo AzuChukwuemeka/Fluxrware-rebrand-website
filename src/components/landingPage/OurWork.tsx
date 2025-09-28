@@ -72,7 +72,10 @@ export default function OurWork() {
               spacing={2}
               justifyContent={"center"}
               paddingBottom={2}
-              sx={{ visibility: "hidden" }}
+              sx={{ 
+                visibility: "hidden",
+                overflowX: "hidden"
+              }}
               ref={rowOneRef}
             >
               {customerReviewsRowOne.map((customerReview, index) => {
@@ -111,6 +114,10 @@ export default function OurWork() {
               justifyContent={"center"} 
               paddingBottom={2}
               ref = {rowTwoRef}
+              sx={{ 
+                visibility: "hidden",
+                overflowX: "hidden"
+              }}
             >
               {customerReviewsRowTwo.map((customerReview, index) => {
                 return (
@@ -148,6 +155,10 @@ export default function OurWork() {
               justifyContent={"center"} 
               paddingBottom={2}
               ref = {rowThreeRef}
+              sx={{ 
+                visibility: "hidden",
+                overflowX: "hidden"
+              }}
             >
               {customerReviewsRowThree.map((customerReview, index) => {
                 return (
