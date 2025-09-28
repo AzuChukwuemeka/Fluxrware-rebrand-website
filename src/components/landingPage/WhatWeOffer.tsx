@@ -4,16 +4,26 @@ import { Theme } from "@mui/material/styles";
 import { whatWeOffer } from "@/data/whatWeOffer";
 import GridAlternate from "./GridAlternate";
 import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import { slideBottomDefaultState, slideBottomToProperties } from "@/animations/slideBottom";
+import gsap from "gsap";
 
 export default function WhatWeOffer() {
+  const titleRef = useRef<HTMLDivElement | null>(null);
   useGSAP(() => {
-    
+    const timeline = gsap.timeline();
+    gsap.set(titleRef, slideBottomDefaultState);
+    timeline.to(titleRef.current, slideBottomToProperties)
   }, []);
   const theme: Theme = useTheme();
   return (
     <>
       <Box style={{ background: "radial-gradient(circle at bottom left, #fefefe 94%, lightblue) 200% 200%" }}>
-        <Container maxWidth="lg">
+        <Container 
+          maxWidth="lg" 
+          ref = {titleRef}
+          sx = {{visibility: "hidden"}}
+        >
           <Typography variant="h3" textAlign={"center"} paddingTop={theme.spacing(10)} fontWeight="bold">
             What We <span style={{ color: theme.palette.primary.main }}>Offer</span>
           </Typography>

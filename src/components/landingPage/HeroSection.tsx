@@ -39,7 +39,6 @@ export default function HeroSection() {
             {
                 yPercent: 0,
                 opacity: 1,
-                duration: .6,
                 stagger: 0.04
             }
         )
@@ -47,21 +46,20 @@ export default function HeroSection() {
             {
                 yPercent: 0,
                 opacity: 1,
-                stagger: 0.4,
+                stagger: 0.04,
             }
         )
         timeline.to(captionRef.current,
             {
                 yPercent: 0,
                 opacity: 1,
-                stagger: 0.4,
+                stagger: 0.04,
             }
         )
         timeline.to(buttonRef.current,
             {
                 yPercent: 0,
                 opacity: 1,
-                stagger: 0.4,
             }
         )
         timeline.play();
