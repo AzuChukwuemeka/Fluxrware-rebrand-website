@@ -61,7 +61,6 @@ export default function HeroSection() {
                 opacity: 1,
                 duration: 1,
                 stagger: 0.4,
-                delay: .5,
                 ease: 'expo.inOut',
             }
         )
