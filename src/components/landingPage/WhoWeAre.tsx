@@ -22,7 +22,7 @@ export default function WhoWeAre() {
       scrollTrigger: {
         trigger: titleRef.current,
         start: "top bottom",
-        end: "top 50%",
+        end: "top 90%",
         toggleActions: "play none none reverse",
         scrub: true
       }
